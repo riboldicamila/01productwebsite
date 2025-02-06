@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../Components/Button.css'
 
-function GenericButton() {
+function GenericButton({ className = '', text = 'SUBSCRIBE' }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -14,13 +14,13 @@ function GenericButton() {
 
   return (
     <button
-      className={`subscribe-button ${isHovered ? 'hover' : ''}`}
+      className={`subscribe-button ${className} ${isHovered ? 'hover' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      SUBSCRIBE
+      {text}
     </button>
   );
 }
 
-export default  GenericButton;
+export default GenericButton;

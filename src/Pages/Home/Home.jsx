@@ -1,6 +1,5 @@
-import AnimatedGif from "../../Components/AnimatedGif";
-import BlogCarousel from "../../Components/BlogCarousel/BlogCarousel";
-import Carousel from "../../Components/Carousel";
+
+import Carousel from "../../Components/Carousel/Carousel";
 import pottery01 from "../../Components/Images/pottery01.jpg";
 import pottery02 from "../../Components/Images/pottery02.jpg";
 import pottery03 from "../../Components/Images/pottery03.jpg";

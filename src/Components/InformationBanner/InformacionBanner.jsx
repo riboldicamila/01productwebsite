@@ -1,4 +1,5 @@
 import AnimatedGif from '../AnimatedGif';
+import GenericButton from '../Button';
 import './InformationBanner.css'; 
 
 const InformationBanner = ({ title, description, benefits }) => {
@@ -15,7 +16,7 @@ const InformationBanner = ({ title, description, benefits }) => {
           </div>
         ))}
       </div>
-      <button className="read-more-btn">Read More</button>
+      <GenericButton />
     </section>
   );
 };
