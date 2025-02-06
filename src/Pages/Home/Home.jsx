@@ -1,7 +1,7 @@
 import Carousel from "../../Components/Carousel"
 import pottery01 from '../../Components/Images/pottery01.jpg'
 import pottery02 from '../../Components/Images/pottery02.jpg'
-import pottery03 from '../../Components/Images/pottery04.jpg'
+import pottery03 from '../../Components/Images/pottery03.jpg'
 import SpecialCategory from "../../Components/SpecialCategory.jsx/SpecialCategory"
 
 

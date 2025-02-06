@@ -1,67 +1,62 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+import React, { useState, useEffect, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
-const categories = [
-  {
-    id: 1,
-    title: 'Pottery',
-    image: '/api/placeholder/400/500',
-  },
-  {
-    id: 2,
-    title: 'Plate',
-    image: '/api/placeholder/400/500',
-  },
-  {
-    id: 3,
-    title: 'heeheh',
-    image: '/api/placeholder/400/500',
-  },
-  // Add more items as needed
+import "./SpecialCategory.css";
+
+import pottery01 from "../../Components/Images/pottery01.jpg";
+import pottery02 from "../../Components/Images/pottery02.jpg";
+import pottery03 from "../../Components/Images/pottery03.jpg";
+
+const images = [
+  { src: pottery01, alt: "Pottery" },
+  { src: pottery02, alt: "Plate" },
+  { src: pottery03, alt: "Vases" },
+  { src: pottery03, alt: "Vases" },
+  { src: pottery03, alt: "Vases" },
 ];
 
-const CategoryShowcase = () => {
+const SpecialCategory = () => {
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (swiperRef.current) {
+        const swiper = swiperRef.current.swiper;
+        if (swiper.isEnd) {
+          swiper.slideTo(0); // Go back to the first slide if we are at the last one
+        } else {
+          swiper.slideNext(); // Otherwise, move to the next slide
+        }
+      }
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <div className="max-w-6xl mx-auto px-4">
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold mb-2">
-          <span className="text-gray-900">Exclusive</span>
-          <span className="text-gray-500 ml-2">Category</span>
-        </h2>
-        <p className="text-gray-600">
-          Discover our fantastic early booking discounts & start planning your journey.
+    <div className="special-category-container">
+      <div className="exclusive-category">
+        <h1>Exclusive Category</h1>
+        <p>
+          Discover our fantastic early booking discounts & start planning your
+          journey.
         </p>
       </div>
-
       <Swiper
+        ref={swiperRef}
+        modules={[Navigation]}
+        spaceBetween={30}
         slidesPerView={3}
-        spaceBetween={24}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="w-full"
+        navigation={false} // Hide the navigation arrows
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
-        {categories.map((category) => (
-          <SwiperSlide key={category.id}>
-            <div className="relative group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg">
-                <img
-                  src={category.image}
-                  alt={category.title}
-                  className="w-full h-[400px] object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-30" />
-              </div>
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-white px-6 py-2 rounded-full text-gray-800 font-medium">
-                  {category.title}
-                </span>
-              </div>
-            </div>
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img src={image.src} alt={image.alt} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -69,4 +64,4 @@ const CategoryShowcase = () => {
   );
 };
 
-export default CategoryShowcase;
+export default SpecialCategory;

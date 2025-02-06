@@ -1,15 +1,18 @@
+.special-category-container{
+    margin: 0 auto; 
+    padding: 2% 10%;
+}
+
 .exclusive-category {
-    text-align: center; 
-    height: 400px;
+    text-align: center;
+    padding: 20px; 
   }
   
   .exclusive-category h1 {
-    font-size: 2rem; 
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
   
   .exclusive-category p {
-    font-size: 1.2rem; 
     color: #888; 
   }
