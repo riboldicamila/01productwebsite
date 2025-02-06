@@ -1,3 +1,4 @@
+import AnimatedGif from '../AnimatedGif';
 import './InformationBanner.css'; 
 
 const InformationBanner = ({ title, description, benefits }) => {
@@ -8,7 +9,7 @@ const InformationBanner = ({ title, description, benefits }) => {
       <div className="benefits-container">
         {benefits.map((benefit, index) => (
           <div className="benefit" key={index}>
-            <img src={benefit.icon} alt={benefit.title} />
+            <AnimatedGif />
             <h3>{benefit.title}</h3>
             <p>{benefit.description}</p>
           </div>

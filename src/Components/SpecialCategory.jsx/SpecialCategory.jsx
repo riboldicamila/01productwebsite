@@ -27,9 +27,9 @@ const SpecialCategory = () => {
       if (swiperRef.current) {
         const swiper = swiperRef.current.swiper;
         if (swiper.isEnd) {
-          swiper.slideTo(0); // Go back to the first slide if we are at the last one
+          swiper.slideTo(0);
         } else {
-          swiper.slideNext(); // Otherwise, move to the next slide
+          swiper.slideNext(); 
         }
       }
     }, 5000);

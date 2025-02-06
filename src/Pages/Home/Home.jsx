@@ -1,4 +1,7 @@
+import AnimatedGif from "../../Components/AnimatedGif";
+import BlogCarousel from "../../Components/BlogCarousel/BlogCarousel";
 import Carousel from "../../Components/Carousel";
+import Icon from "../../Components/Icon";
 import pottery01 from "../../Components/Images/pottery01.jpg";
 import pottery02 from "../../Components/Images/pottery02.jpg";
 import pottery03 from "../../Components/Images/pottery03.jpg";
@@ -41,8 +44,9 @@ function Home() {
         benefits={mockData.benefits}
       />
 
+      {/* <BlogCarousel /> */}
+
       {/* carrosel with products */}
-      {/* why Pottery.Li with products */}
       {/*latest blog */}
     </div>
   );
