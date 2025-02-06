@@ -56,7 +56,7 @@ const SpecialCategory = () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image.src} alt={image.alt} />
+            <img src={image.src} alt={image.alt} className="special-img" />
           </SwiperSlide>
         ))}
       </Swiper>
