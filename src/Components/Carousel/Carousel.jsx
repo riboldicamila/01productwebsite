@@ -15,7 +15,7 @@ function Carousel({ image1, image2, image3 }) {
       pagination={{ clickable: true }}
       spaceBetween={50}
       slidesPerView={1}
-      style={{ maxHeight: "500px" }}
+      style={{ maxHeight: "700px" }}
     >
       {[image1, image2, image3].map((image, index) => (
         <SwiperSlide

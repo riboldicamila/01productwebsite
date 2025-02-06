@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -29,7 +29,7 @@ const SpecialCategory = () => {
         if (swiper.isEnd) {
           swiper.slideTo(0);
         } else {
-          swiper.slideNext(); 
+          swiper.slideNext();
         }
       }
     }, 5000);
@@ -40,8 +40,8 @@ const SpecialCategory = () => {
   return (
     <div className="special-category-container">
       <div className="exclusive-category">
-        <h1>Exclusive Category</h1>
-        <p>
+      <h1>Exclusive <span className="highlight-word">Category</span></h1>
+      <p>
           Discover our fantastic early booking discounts & start planning your
           journey.
         </p>

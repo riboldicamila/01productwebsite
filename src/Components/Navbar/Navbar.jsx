@@ -1,15 +1,33 @@
+import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGlobe } from 'react-icons/fa';
-import { Link } from 'react-router-dom';  // Import Link for navigation
-import logoImage from '../Images/logo.png'
+import logoImage from '../Images/logo.png';
 import './navbar.css';
 
 function Navbar() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className="top-bar">
         <span className="email">
           <span className="nav-icon">
-            <FaEnvelope /> 
+            <FaEnvelope />
           </span>
           info@gmail.com
         </span>
@@ -17,12 +35,12 @@ function Navbar() {
           <FaGlobe />
         </span>
       </div>
-      <nav className="navbar">
+      <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <div className="left-side">
           <ul className="nav-links">
-            <li><Link to="/">Liliana</Link></li> {/* Use Link for navigation */}
-            <li><Link to="/">Creations</Link></li> {/* Use Link for navigation */}
-            <li><Link to="/">History</Link></li> {/* Use Link for navigation */}
+            <li>Liliana</li>
+            <li>Creations</li>
+            <li>History</li>
           </ul>
         </div>
         <div className="logo">
@@ -30,9 +48,9 @@ function Navbar() {
         </div>
         <div className="right-side">
           <ul className="nav-links">
-            <li><Link to="/blog">Blog</Link></li> {/* Use Link for navigation */}
-            <li><Link to="/search">Search</Link></li> {/* Use Link for navigation */}
-            <li><Link to="/contact">Contact</Link></li> {/* Use Link for navigation */}
+            <li>Blog</li>
+            <li>Search</li>
+            <li>Contact</li>
           </ul>
         </div>
       </nav>
