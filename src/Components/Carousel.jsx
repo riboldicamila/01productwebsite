@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import GenericButton from './Button';
 
 function Carousel({ image1, image2, image3 }) {
   return (
@@ -52,9 +53,7 @@ function Carousel({ image1, image2, image3 }) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt n morbi
               habitasse viverra.
             </p>
-            <button style={{ marginTop: '1rem', padding: '1rem 2rem', backgroundColor: 'white', color: 'black' }}>
-              Shop Now
-            </button>
+            <GenericButton />
           </div>
         </SwiperSlide>
       ))}
