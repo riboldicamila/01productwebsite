@@ -1,0 +1,43 @@
+.info-banner {
+  background: url("../Images/information-banner.png") no-repeat center center/cover;
+  padding: 50px 10%;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.info-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.info-banner p {
+  margin-bottom: 40px;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.benefit {
+  text-align: center;
+  padding: 20px;
+}
+
+.benefit img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
