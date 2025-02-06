@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -42,15 +41,14 @@ function Carousel({ image1, image2, image3 }) {
             style={{
               position: 'absolute',
               top: '50%',
-              left: '50%',
+              left: '40%',
               transform: 'translate(-50%, -50%)',
-              textAlign: 'center',
               color: 'white',
             }}
           >
+            <h2 style={{ fontSize: '1rem', textTransform: 'uppercase' }}>Art & Print</h2>
             <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Create Your Clay</h1>
-            <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Art & Print</h2>
-            <p style={{ fontSize: '1.2rem' }}>
+            <p style={{ fontSize: '1rem' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt n morbi
               habitasse viverra.
             </p>

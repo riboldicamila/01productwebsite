@@ -1,0 +1,15 @@
+.exclusive-category {
+    text-align: center; 
+    height: 400px;
+  }
+  
+  .exclusive-category h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .exclusive-category p {
+    font-size: 1.2rem; 
+    color: #888; 
+  }
