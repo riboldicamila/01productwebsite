@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import pottery03 from "../../Components/Images/pottery03.jpg"
+
 import './CollectionPage.css';
 
 const CollectionPage = () => {
   const [viewMode, setViewMode] = useState('grid');
-  const [sortBy, setSortBy] = useState('Alphabetically, Z-A');
 
   const products = [
     {
@@ -11,7 +12,7 @@ const CollectionPage = () => {
       name: 'Wowed Art',
       price: 75.00,
       originalPrice: 800.00,
-      image: '/path-to-image-1.jpg',
+      image: pottery03,
       onSale: true,
       colors: ['red', 'black', 'blue'],
       rating: 4
@@ -21,7 +22,7 @@ const CollectionPage = () => {
       name: 'Woodsy Art',
       price: 60.00,
       originalPrice: 950.00,
-      image: '/path-to-image-2.jpg',
+      image: pottery03,
       onSale: true,
       colors: ['red', 'green', 'yellow'],
       rating: 5
@@ -30,7 +31,7 @@ const CollectionPage = () => {
       id: 3,
       name: 'Wert Art',
       price: 80.00,
-      image: '/path-to-image-3.jpg',
+      image: pottery03,
       onSale: false,
       rating: 2
     },
@@ -75,30 +76,13 @@ const CollectionPage = () => {
           </button>
           <span className="product-count">Showing 20 of 20 products</span>
         </div>
-
-        <div className="sort-control">
-          <label>Sort by</label>
-          <select 
-            value={sortBy} 
-            onChange={(e) => setSortBy(e.target.value)}
-          >
-            <option>Alphabetically, Z-A</option>
-            <option>Alphabetically, A-Z</option>
-            <option>Price, low to high</option>
-            <option>Price, high to low</option>
-          </select>
-        </div>
       </div>
 
       <div className={`products-grid ${viewMode}`}>
         {products.map(product => (
           <div key={product.id} className="product-card">
             <div className="product-image">
-              {product.onSale && <span className="sale-badge">Sale</span>}
               <img src={product.image} alt={product.name} />
-              <div className="rating">
-                {'★'.repeat(product.rating)}{'☆'.repeat(5-product.rating)}
-              </div>
             </div>
             <div className="product-info">
               <h3>{product.name}</h3>
@@ -108,17 +92,6 @@ const CollectionPage = () => {
                 )}
                 <span className="price">${product.price.toFixed(2)}</span>
               </div>
-              {product.colors && (
-                <div className="color-options">
-                  {product.colors.map(color => (
-                    <span 
-                      key={color} 
-                      className="color-dot"
-                      style={{ backgroundColor: color }}
-                    />
-                  ))}
-                </div>
-              )}
             </div>
           </div>
         ))}

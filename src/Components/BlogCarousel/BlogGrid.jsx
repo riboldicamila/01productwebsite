@@ -10,7 +10,6 @@ const BlogGrid = () => {
     <div className="container">
       <div className="header">
         <h1>Art & Craft</h1>
-        <Link to="/rss" className="rss-link">RSS</Link>
       </div>
       
       <div className="blog-grid">

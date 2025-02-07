@@ -1,6 +1,9 @@
 import React from "react";
 import "./AboutUs.css";
 import OurServices from "../../Components/OurServices/OurServices";
+import pottery01 from "../../Components/Images/pottery01.jpg";
+import GenericButton from "../../Components/Button";
+
 
 function AboutUs() {
   return (
@@ -22,10 +25,10 @@ function AboutUs() {
             </li>
             <li>The passage is attributed to</li>
           </ul>
-          <button className="contact-us-btn">CONTACT US →</button>
+          <GenericButton />
         </div>
         <div className="image-container">
-          <img src="path/to/your/image.jpg" alt="Flowers in a Vase" />
+          <img src={pottery01} alt="Flowers in a Vase" />
         </div>
       </div>
 

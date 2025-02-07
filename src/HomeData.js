@@ -1,3 +1,4 @@
+import pottery02 from "./Components/Images/pottery02.jpg"
 
 
 
@@ -34,7 +35,7 @@ export const mockData = {
       date: "17 Mar 2023",
       author: "Ishi Themes",
       subtitle: "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat...",
-      image: "/sample-image-1.jpg",
+      image: pottery02,
       slug: "digital-marketing-1"
     },
     {
@@ -43,7 +44,7 @@ export const mockData = {
       date: "17 Mar 2023",
       author: "Ishi Themes",
       subtitle: "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat...",
-      image: "/sample-image-2.jpg",
+      image: pottery02,
       slug: "digital-marketing-2"
     },
     {
@@ -52,7 +53,7 @@ export const mockData = {
       date: "17 Mar 2023",
       author: "Ishi Themes",
       subtitle: "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat...",
-      image: "/sample-image-3.jpg",
+      image: pottery02,
       slug: "digital-marketing-3"
     }
   ];
