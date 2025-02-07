@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGlobe } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import logoImage from '../Images/logo.png';
 import './navbar.css';
 
@@ -38,9 +39,9 @@ function Navbar() {
       <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <div className="left-side">
           <ul className="nav-links">
-            <li>Liliana</li>
-            <li>Creations</li>
-            <li>History</li>
+            <li><Link to="/">Liliana</Link></li> {/* Add Link component */}
+            <li><Link to="/creations">Creations</Link></li> {/* Add Link component */}
+            <li><Link to="/history">History</Link></li> {/* Add Link component */}
           </ul>
         </div>
         <div className="logo">
@@ -48,9 +49,9 @@ function Navbar() {
         </div>
         <div className="right-side">
           <ul className="nav-links">
-            <li>Blog</li>
-            <li>Search</li>
-            <li>Contact</li>
+            <li><Link to="/blog">Blog</Link></li> {/* Add Link component */}
+            <li><Link to="/search">Search</Link></li> {/* Add Link component */}
+            <li><Link to="/contact">Contact</Link></li> {/* Add Link component */}
           </ul>
         </div>
       </nav>

@@ -1,0 +1,164 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .rss-link {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .rss-link:hover {
+    color: #333;
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .blog-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .blog-meta {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .separator {
+    margin: 0 8px;
+  }
+  
+  .blog-subtitle {
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .read-more {
+    color: #0066cc;
+    font-weight: 500;
+  }
+  
+  .read-more:hover {
+    color: #0052a3;
+  }
+  
+  /* Blog Detail Styles */
+  .back-link {
+    display: inline-block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+  
+  .back-link:hover {
+    color: #333;
+  }
+  
+  .blog-detail {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .detail-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .blog-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .detail-meta {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .detail-content {
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .container {
+      padding: 15px;
+    }
+    
+    .header h1 {
+      font-size: 2rem;
+    }
+    
+    .blog-detail h1 {
+      font-size: 2rem;
+    }
+    
+    .detail-image {
+      height: 300px;
+    }
+  }
