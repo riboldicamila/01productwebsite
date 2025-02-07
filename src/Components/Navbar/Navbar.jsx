@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGlobe } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 import logoImage from '../Images/logo.png';
+import { navLinksLeft, navLinksRight } from '../../Data/NavbarData'; 
 import './navbar.css';
 
 function Navbar() {
@@ -39,9 +40,11 @@ function Navbar() {
       <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <div className="left-side">
           <ul className="nav-links">
-            <li><Link to="/">Liliana</Link></li> {/* Add Link component */}
-            <li><Link to="/collection">Creations</Link></li> {/* Add Link component */}
-            <li><Link to="/about-us">History</Link></li> {/* Add Link component */}
+            {navLinksLeft.map((link) => (
+              <li key={link.name}>
+                <Link to={link.path}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="logo">
@@ -49,9 +52,11 @@ function Navbar() {
         </div>
         <div className="right-side">
           <ul className="nav-links">
-            <li><Link to="/blog">Blog</Link></li> {/* Add Link component */}
-            <li><Link to="/search">Search</Link></li> {/* Add Link component */}
-            <li><Link to="/contact">Contact</Link></li> {/* Add Link component */}
+            {navLinksRight.map((link) => (
+              <li key={link.name}>
+                <Link to={link.path}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

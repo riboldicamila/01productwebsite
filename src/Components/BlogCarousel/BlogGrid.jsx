@@ -1,6 +1,6 @@
 import React, {useParams} from 'react';
 import { Link } from 'react-router-dom';
-import { blogs } from "../../Content.js";
+import { blogs } from "../../HomeData.js";
 
 import './BlogStyles.css';
 

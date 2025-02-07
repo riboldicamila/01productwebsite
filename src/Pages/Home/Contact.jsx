@@ -1,4 +1,5 @@
 import './Contact.css';
+import { contactInfo, socialLinks } from '../../Data/ContactData'; 
 
 const Contact = () => {
   return (
@@ -21,44 +22,34 @@ const Contact = () => {
           <div className="info-grid">
             <div className="info-item">
               <h3>Address</h3>
-              <p>Silver business point</p>
-              <p>India</p>
+              <p>{contactInfo.address[0]}</p>
+              <p>{contactInfo.address[1]}</p>
             </div>
             
             <div className="info-item">
               <h3>Phone</h3>
-              <p>9033697984</p>
+              <p>{contactInfo.phone}</p>
             </div>
             
             <div className="info-item">
               <h3>Email</h3>
-              <p>info@gmail.com</p>
+              <p>{contactInfo.email}</p>
             </div>
             
             <div className="info-item">
               <h3>Additional Information</h3>
-              <p>We are open: Monday - Saturday, 10AM - 5PM and closed on sunday sorry for that.</p>
+              <p>{contactInfo.additionalInfo}</p>
             </div>
           </div>
           
           <div className="social-links">
             <h3>Social</h3>
             <div className="social-icons">
-              <a href="#" className="social-icon">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-tiktok"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-snapchat"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-vimeo-v"></i>
-              </a>
+              {socialLinks.map((social) => (
+                <a href={social.link} key={social.name} className="social-icon">
+                  <i className={social.icon}></i>
+                </a>
+              ))}
             </div>
           </div>
         </div>

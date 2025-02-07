@@ -1,6 +1,8 @@
 import "./Footer.css";
 import { FaTiktok, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import logoImage from "../Images/logo.png";
+import { aboutLinks, businessLinks, contactInfo } from "../../Data/FooterData"; 
 
 const Footer = () => {
   return (
@@ -17,25 +19,34 @@ const Footer = () => {
       </div>
       <div className="footer-column">
         <h3 className="title">About Us</h3>
-        <p>About Us</p>
-        <p>History</p>
-        <p>Our Creations</p>
+        <ul>
+          {aboutLinks.map((link) => (
+            <li key={link.name}>
+              <Link to={link.path}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="footer-column">
         <h3 className="title">Our Business</h3>
-        <p>About Us</p>
-        <p>History</p>
+        <ul>
+          {businessLinks.map((link) => (
+            <li key={link.name}>
+              <Link to={link.path}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="footer-column">
         <h3 className="title">Contact Information</h3>
         <p>
-          <strong>Location:</strong> 1234 Address St, City, Country
+          <strong>Location:</strong> {contactInfo.location}
         </p>
         <p>
-          <strong>Contact Us:</strong> (123) 456-7890
+          <strong>Contact Us:</strong> {contactInfo.phone}
         </p>
         <p>
-          <strong>Email:</strong> info@example.com
+          <strong>Email:</strong> <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
         </p>
       </div>
     </footer>
