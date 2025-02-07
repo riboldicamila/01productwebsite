@@ -25,7 +25,6 @@
   font-size: 16px;
 }
 
-/* Navbar styles */
 .navbar {
   background-color: white;
   display: flex;
@@ -33,22 +32,20 @@
   align-items: center;
   padding: 10px 20px;
   height: 80px;
-  position: relative;  /* Initially set to relative */
-  z-index: 10; /* Ensure the navbar is above other content */
-  transition: padding 0.3s ease, box-shadow 0.3s ease; /* Transition for padding and shadow */
+  position: relative;  
+  z-index: 10; 
+  transition: padding 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* When the navbar becomes sticky */
 .navbar.sticky {
-  position: fixed;  /* Now position is fixed when sticky */
+  position: fixed;  
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow when sticky */
-  padding: 5px 20px; /* Adjust padding when sticky */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 5px 20px;
 }
 
-/* Logo styling */
 .navbar .logo {
   width: 220px;
   height: 100px;

@@ -40,7 +40,7 @@ function Navbar() {
         <div className="left-side">
           <ul className="nav-links">
             <li><Link to="/">Liliana</Link></li> {/* Add Link component */}
-            <li><Link to="/creations">Creations</Link></li> {/* Add Link component */}
+            <li><Link to="/collection">Creations</Link></li> {/* Add Link component */}
             <li><Link to="/about-us">History</Link></li> {/* Add Link component */}
           </ul>
         </div>

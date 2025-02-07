@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
+import OurServices from "../../Components/OurServices/OurServices";
 
 function AboutUs() {
   return (
@@ -27,6 +28,8 @@ function AboutUs() {
           <img src="path/to/your/image.jpg" alt="Flowers in a Vase" />
         </div>
       </div>
+
+      <OurServices />
 
     </div>
   );

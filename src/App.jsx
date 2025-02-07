@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import BlogGrid from './Components/BlogCarousel/BlogGrid';
 import AboutUs from './Pages/Home/AboutUs';
+import Contact from './Pages/Home/Contact';
+import CollectionPage from './Pages/Home/Collection';
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<BlogGrid />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/collection" element={<CollectionPage />} />
+
+
           </Routes>
         </div>
         <Footer />

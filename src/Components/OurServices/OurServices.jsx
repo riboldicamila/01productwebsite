@@ -1,7 +1,6 @@
-import React from 'react';
-import './ServicesBanner.css'; 
+import './OurServices.css'; 
 
-const ServicesBanner = () => {
+const OurServices = () => {
   return (
     <section className="our-services">
       <h2>Our Services</h2>
@@ -42,4 +41,4 @@ const ServicesBanner = () => {
   );
 };
 
-export default ServicesBanner;
+export default OurServices;
