@@ -1,24 +1,25 @@
-import React, {useParams} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { blogs } from '../../HomeData.js';
 import './BlogStyles.css';
-
 
 const BlogDetail = () => {
   const { slug } = useParams();
   
-  const blog = {
-    title: "Artem - Digital Marketing campaign",
-    date: "17 Mar 2023",
-    author: "Ishi Themes",
-    content: "Full article content would go here...",
-    image: "/sample-image-1.jpg"
-  };
+  const blog = blogs.find((b) => b.slug === slug);
+
+  if (!blog) {
+    return (
+      <div className="container">
+        <Link to="/" className="back-link">← Back to Articles</Link>
+        <h2>Artículo no encontrado</h2>
+      </div>
+    );
+  }
 
   return (
     <div className="container">
-      <Link to="/" className="back-link">
-        ← Back to Articles
-      </Link>
+      <Link to="/" className="back-link">← Back to Articles</Link>
       
       <article className="blog-detail">
         <div className="detail-image">
@@ -34,7 +35,8 @@ const BlogDetail = () => {
         </div>
         
         <div className="detail-content">
-          {blog.content}
+          <p>{blog.subtitle}</p>
+          <p>Contenido completo del blog...</p>
         </div>
       </article>
     </div>

@@ -7,6 +7,8 @@ import BlogGrid from './Components/BlogCarousel/BlogGrid';
 import AboutUs from './Pages/Home/AboutUs';
 import Contact from './Pages/Home/Contact';
 import CollectionPage from './Pages/Home/Collection';
+import BlogDetail from './Components/BlogCarousel/BlogDetail';
+import WebsiteSearch from './Pages/Home/Search';
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/collection" element={<CollectionPage />} />
-
+            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/search" element={<WebsiteSearch />} />
 
           </Routes>
         </div>
