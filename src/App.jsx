@@ -4,6 +4,7 @@ import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import BlogGrid from './Components/BlogCarousel/BlogGrid';
+import AboutUs from './Pages/Home/AboutUs';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<BlogGrid />} />
+            <Route path="/about-us" element={<AboutUs />} />
           </Routes>
         </div>
         <Footer />
