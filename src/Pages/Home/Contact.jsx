@@ -36,11 +36,6 @@ const Contact = () => {
             </div>
             
             <div className="info-item">
-              <h3>Phone</h3>
-              <p>{contactInfo.phone}</p>
-            </div>
-            
-            <div className="info-item">
               <h3>Email</h3>
               <p>{contactInfo.email}</p>
             </div>
