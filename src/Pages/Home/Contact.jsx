@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="social-icons">
               {socialLinks.map((social) => (
                 <a href={social.link} key={social.name} className="social-icon">
-                  {socialLinks.icon}
+                  {social.icon}
                 </a>
               ))}
             </div>
