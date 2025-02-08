@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import GenericButton from "../../Components/Button";
+import pottery03 from "../../Components/Images/pottery03.jpg";
+import "./Search.css"; // Import CSS file
 
 const Search = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -32,116 +34,52 @@ const Search = () => {
   ];
 
   return (
-    <div style={styles.container}>
-      <div style={styles.imageSection}>
-        <img
-          src="/api/placeholder/600/400"
-          alt="Liliana pottery"
-          style={styles.mainImage}
-        />
-      </div>
-
-      <div style={styles.contentSection}>
-        <h2 style={styles.faqTitle}>FAQs</h2>
-        <p style={styles.faqSubtitle}>
-          Discover our fantastic early booking discounts & start planning your
-          journey.
-        </p>
-
-        {faqData.map((faq, index) => (
-          <div key={index} style={styles.faqItem}>
-            <div
-              style={styles.faqQuestion}
-              onClick={() =>
-                setActiveQuestion(activeQuestion === index ? null : index)
-              }
-            >
-              {faq.question}
-              <span style={styles.dropdownIcon}>
-                {activeQuestion === index ? "▲" : "▼"}
-              </span>
+    <div className="container">
+      <div className="content-wrapper">
+        <div className="image-section">
+          <img src={pottery03} alt="Liliana pottery" className="main-image" />
+        </div>
+  
+        <div className="content-section">
+          <h2 className="faq-title">FAQs</h2>
+          <p className="faq-subtitle">
+            Discover our fantastic early booking discounts & start planning your
+            journey.
+          </p>
+  
+          {faqData.map((faq, index) => (
+            <div key={index} className="faq-item">
+              <div
+                className="faq-question"
+                onClick={() =>
+                  setActiveQuestion(activeQuestion === index ? null : index)
+                }
+              >
+                {faq.question}
+                <span className="dropdown-icon">
+                  {activeQuestion === index ? "▲" : "▼"}
+                </span>
+              </div>
+              {activeQuestion === index && (
+                <div className="faq-answer">{faq.answer}</div>
+              )}
             </div>
-            {activeQuestion === index && (
-              <div style={styles.faqAnswer}>{faq.answer}</div>
-            )}
-          </div>
-        ))}
-
-        <GenericButton />
+          ))}
+  
+          <GenericButton />
+        </div>
       </div>
-
-      <div style={styles.logoSection}>
+  
+      <div className="logo-section">
         {logos.map((logo, index) => (
-          <div key={index} style={styles.logoItem}>
+          <div key={index} className="logo-item">
             {logo}
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    maxWidth: "1200px",
-    margin: "0 auto",
-    fontFamily: "Arial, sans-serif",
-  },
-  imageSection: {
-    width: "100%",
-    marginBottom: "20px",
-  },
-  mainImage: {
-    width: "100%",
-    height: "auto",
-    objectFit: "cover",
-  },
-  contentSection: {
-    padding: "0 20px",
-  },
-  faqTitle: {
-    fontSize: "24px",
-    marginBottom: "10px",
-  },
-  faqSubtitle: {
-    color: "#666",
-    marginBottom: "20px",
-  },
-  faqItem: {
-    borderBottom: "1px solid #eee",
-    marginBottom: "10px",
-  },
-  faqQuestion: {
-    display: "flex",
-    justifyContent: "space-between",
-    padding: "10px 0",
-    cursor: "pointer",
-  },
-  faqAnswer: {
-    padding: "10px 0",
-    color: "#666",
-  },
-  dropdownIcon: {
-    fontSize: "12px",
-  },
-  readMoreButton: {
-    backgroundColor: "black",
-    color: "white",
-    border: "none",
-    padding: "10px 20px",
-    marginTop: "20px",
-    cursor: "pointer",
-  },
-  logoSection: {
-    display: "flex",
-    justifyContent: "space-between",
-    padding: "20px",
-    flexWrap: "wrap",
-  },
-  logoItem: {
-    color: "#999",
-    fontSize: "14px",
-  },
+  
 };
 
 export default Search;
