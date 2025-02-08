@@ -3,42 +3,12 @@ import pottery03 from "../../Components/Images/pottery03.jpg"
 
 import './CollectionPage.css';
 import GenericButton from '../../Components/Button';
+import { products } from '../../Data/CollectionData'; 
+
 
 const CollectionPage = () => {
   const [viewMode, setViewMode] = useState('grid');
-
-  const products = [
-    {
-      id: 1,
-      name: 'Wowed Art',
-      price: 75.00,
-      originalPrice: 800.00,
-      image: pottery03,
-      onSale: true,
-      colors: ['red', 'black', 'blue'],
-      rating: 4
-    },
-    {
-      id: 2,
-      name: 'Woodsy Art',
-      price: 60.00,
-      originalPrice: 950.00,
-      image: pottery03,
-      onSale: true,
-      colors: ['red', 'green', 'yellow'],
-      rating: 5
-    },
-    {
-      id: 3,
-      name: 'Wert Art',
-      price: 80.00,
-      image: pottery03,
-      onSale: false,
-      rating: 2
-    },
-   
-  ];
-
+  
   return (
     <div className="collection-container">
       <h1 className="collection-title">Sketch Art</h1>
@@ -87,12 +57,6 @@ const CollectionPage = () => {
             </div>
             <div className="product-info">
               <h3>{product.name}</h3>
-              <div className="price-container">
-                {product.originalPrice && (
-                  <span className="original-price">${product.originalPrice.toFixed(2)}</span>
-                )}
-                <span className="price">${product.price.toFixed(2)}</span>
-              </div>
             </div>
           </div>
         ))}

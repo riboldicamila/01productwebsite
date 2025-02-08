@@ -42,9 +42,7 @@ const Footer = () => {
         <p>
           <strong>Location:</strong> {contactInfo.location}
         </p>
-        <p>
-          <strong>Contact Us:</strong> {contactInfo.phone}
-        </p>
+    
         <p>
           <strong>Email:</strong> <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
         </p>

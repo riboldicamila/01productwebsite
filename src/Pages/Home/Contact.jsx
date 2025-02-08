@@ -1,6 +1,9 @@
 import './Contact.css';
 import { contactInfo, socialLinks } from '../../Data/ContactData'; 
 
+import contact01 from "../../Components/Images/contact01.jpg";
+
+
 const Contact = () => {
   return (
     <div className="contact-container">
@@ -9,7 +12,7 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-image">
           <img 
-            src="/path-to-your-image.jpg" 
+            src={contact01}
             alt="Decorative vase with flowers" 
             className="main-image"
           />
@@ -17,11 +20,11 @@ const Contact = () => {
         
         <div className="contact-info">
           <h2 className="get-in-touch">GET IN TOUCH</h2>
-          <p className="subtitle">Wed Love to Hear From You, Lets Get In Touch!</p>
+          <p className="subtitle">Would love to connect, Lets Get In Touch!</p>
           
           <div className="info-grid">
             <div className="info-item">
-              <h3>Address</h3>
+              <h3>Based on</h3>
               <p>{contactInfo.address[0]}</p>
               <p>{contactInfo.address[1]}</p>
             </div>

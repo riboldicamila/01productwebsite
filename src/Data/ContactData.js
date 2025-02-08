@@ -1,18 +1,14 @@
 export const contactInfo = {
     address: [
-      "Silver business point",
-      "India"
+      "Worldwide. Argentina and Italy based."
     ],
-    phone: "9033697984",
-    email: "info@gmail.com",
-    additionalInfo: "We are open: Monday - Saturday, 10AM - 5PM and closed on Sunday, sorry for that.",
+    email: "cami.riboldi@gmail.com",
+    additionalInfo: "Reach out leaving an email, or connect on Linkedin.",
   };
   
   export const socialLinks = [
-    { name: "Facebook", icon: "fab fa-facebook-f", link: "#" },
-    { name: "Instagram", icon: "fab fa-instagram", link: "#" },
-    { name: "Tiktok", icon: "fab fa-tiktok", link: "#" },
-    { name: "Snapchat", icon: "fab fa-snapchat", link: "#" },
-    { name: "Vimeo", icon: "fab fa-vimeo-v", link: "#" },
+    { name: "Website", icon: "fab fa-instagram", link: "#" },
+    { name: "Linkedin", icon: "fab fa-tiktok", link: "#" },
+    { name: "Github", icon: "fab fa-snapchat", link: "#" },
   ];
   

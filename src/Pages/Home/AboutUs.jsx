@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import OurServices from "../../Components/OurServices/OurServices";
-import pottery01 from "../../Components/Images/pottery01.jpg";
+import pottery01 from "../../Components/Images/tech02.jpg";
 import GenericButton from "../../Components/Button";
 
 
@@ -10,20 +10,19 @@ function AboutUs() {
     <div>
       <div className="about-me-container">
         <div className="about-us-content">
-          <h2>About Us</h2>
-          <h3>We Have Everything You Need ?</h3>
+          <h2>About </h2>
+          <h3>How is my developer profile?</h3>
           <p>
-            Faded short sleeves t-shirt with high neckline. Soft and stretchy
-            material for a comfortable fit. Accessorize with a straw hat and
-            youre ready for summer!
+            Having +3 years of experience developing applications and websites. 
+            Passionate about UX/UI experience. Worked with API (RESTful applications), backend services, databases, and different frameworks.
           </p>
-          <h4>Sample Unordered List</h4>
+          <h4>Main skills </h4>
           <ul>
-            <li>Lorem ipsum, or lipsum as it is sometimes known</li>
+            <li>React JS, HTML, CSS</li>
             <li>
-              Dummy text used in laying out print, graphic, or web designs
+              JavaScript (ongoing training on Node.js+Express+MongoDB)
             </li>
-            <li>The passage is attributed to</li>
+            <li>Experience with Python, SQL, Cherrypy framework</li>
           </ul>
           <GenericButton />
         </div>
