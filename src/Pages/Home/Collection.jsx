@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import pottery03 from "../../Components/Images/pottery03.jpg"
 
 import './CollectionPage.css';
+import GenericButton from '../../Components/Button';
 
 const CollectionPage = () => {
   const [viewMode, setViewMode] = useState('grid');
@@ -50,7 +51,7 @@ const CollectionPage = () => {
         <div className="banner-content">
           <span className="new-arrival">NEW ARRIVALS</span>
           <h2 className="banner-title">Craft Collection</h2>
-          <button className="shop-now-btn">SHOP NOW</button>
+          <GenericButton />
         </div>
       </div>
 

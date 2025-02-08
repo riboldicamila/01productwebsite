@@ -40,4 +40,15 @@
   .social-media-icons i:hover {
     color: white;
   }
+
+  .footer-column ul li,
+.footer-column ul li a {
+  color: lightgray; 
+  transition: color 0.3s ease-in-out; 
+}
+
+.footer-column ul li:hover,
+.footer-column ul li a:hover {
+  color: white; 
+}
   
