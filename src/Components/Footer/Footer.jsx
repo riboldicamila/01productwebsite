@@ -10,10 +10,6 @@ const Footer = () => {
       <div className="footer-column">
         <img src={logoImage} alt="Logo" className="logo" />
         <p className="text-light">Engineering user-friendly solutions.</p>
-        <div className="social-media-icons">
-          <FaTiktok className="tiktok-icon" />
-          <FaInstagram className="instagram-icon" />
-        </div>
       </div>
       <div className="footer-column">
         <h3 className="title">About Us</h3>
