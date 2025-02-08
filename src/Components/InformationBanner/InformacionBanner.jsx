@@ -16,7 +16,7 @@ const InformationBanner = ({ title, description, benefits }) => {
           </div>
         ))}
       </div>
-      <GenericButton />
+      <GenericButton text="Check Projects" to="/creations" />
     </section>
   );
 };

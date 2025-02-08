@@ -19,10 +19,10 @@ function App() {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<BlogGrid />} />
-            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/creations" element={<BlogGrid />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/collection" element={<CollectionPage />} />
+            <Route path="/technologies" element={<CollectionPage />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/search" element={<WebsiteSearch />} />
 

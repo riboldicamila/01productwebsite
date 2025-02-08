@@ -1,10 +1,16 @@
 import './Contact.css';
-import { contactInfo, socialLinks } from '../../Data/ContactData'; 
-
+import { contactInfo } from '../../Data/ContactData'; 
 import contact01 from "../../Components/Images/contact01.jpg";
+import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; 
 
 
 const Contact = () => {
+  const socialLinks = [
+    { name: "Website", icon: <FaGlobe size={24} />, link: "https://camila-riboldi.vercel.app/" },
+    { name: "Linkedin", icon: <FaLinkedin size={24} />, link: "https://www.linkedin.com/in/camila-riboldi/" },
+    { name: "Github", icon: <FaGithub size={24} />, link: "https://github.com/riboldicamila" },
+  ];
+  
   return (
     <div className="contact-container">
       <h1 className="contact-title">Contact</h1>
@@ -50,7 +56,7 @@ const Contact = () => {
             <div className="social-icons">
               {socialLinks.map((social) => (
                 <a href={social.link} key={social.name} className="social-icon">
-                  <i className={social.icon}></i>
+                  {socialLinks.icon}
                 </a>
               ))}
             </div>

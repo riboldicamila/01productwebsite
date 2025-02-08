@@ -9,7 +9,7 @@ const BlogGrid = () => {
   return (
     <div className="container">
       <div className="header">
-        <h1>Art & Craft</h1>
+        <h1>Projects</h1>
       </div>
       
       <div className="blog-grid">

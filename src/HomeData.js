@@ -29,32 +29,50 @@ export const mockData = {
 };
 
 
-  export const blogs = [
-    {
-      id: 1,
-      title: "Artem - Digital Marketing campaign",
-      date: "17 Mar 2023",
-      author: "Ishi Themes",
-      subtitle: "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat...",
-      image: pottery02,
-      slug: "digital-marketing-1"
-    },
-    {
-      id: 2,
-      title: "Artem - Digital Marketing campaign",
-      date: "17 Mar 2023",
-      author: "Ishi Themes",
-      subtitle: "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat...",
-      image: pottery02,
-      slug: "digital-marketing-2"
-    },
-    {
-      id: 3,
-      title: "Artem - Digital Marketing campaign",
-      date: "17 Mar 2023",
-      author: "Ishi Themes",
-      subtitle: "Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat...",
-      image: pottery02,
-      slug: "digital-marketing-3"
-    }
-  ];
+export const blogs = [
+  {
+    id: 1,
+    title: "Daily Panel - Web Application",
+    date: "08 Feb 2025",
+    author: "Camila Riboldi",
+    subtitle: "An ongoing project utilizing React, global state management with UseContext, Firebase authentication, and API connections to streamline daily operations.",
+    image: pottery02,
+    slug: "daily-panel-app"
+  },
+  {
+    id: 2,
+    title: "Projects & Portfolio - My Digital Showcase",
+    date: "08 Feb 2025",
+    author: "Camila Riboldi",
+    subtitle: "A professional landing page built with React, incorporating Material UI, GSAP animations, and dynamic routing to enhance user experience.",
+    image: pottery02,
+    slug: "projects-portfolio"
+  },
+  {
+    id: 3,
+    title: "Minimal Web Design - React Practice",
+    date: "08 Feb 2025",
+    author: "Camila Riboldi",
+    subtitle: "A minimalist web page created with React, CSS, and Bootstrap, focusing on clean UI design and smooth user interactions.",
+    image: pottery02,
+    slug: "minimal-web-design"
+  },
+  {
+    id: 4,
+    title: "Swiss Media - Responsive Website Design",
+    date: "08 Feb 2025",
+    author: "Camila Riboldi",
+    subtitle: "A responsive website built with HTML, CSS, Sass, and Bootstrap, leveraging various libraries to enhance interactivity and animation.",
+    image: pottery02,
+    slug: "swiss-media"
+  },
+  {
+    id: 5,
+    title: "Corporate Projects - Enterprise Solutions",
+    date: "08 Feb 2025",
+    author: "Camila Riboldi",
+    subtitle: "A set of corporate projects developed with React, Python, and SQL, utilizing internal component libraries and CI/CD pipelines for automation.",
+    image: pottery02,
+    slug: "corporate-projects"
+  }
+];

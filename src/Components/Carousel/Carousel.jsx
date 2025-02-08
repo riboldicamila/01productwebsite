@@ -65,7 +65,7 @@ function Carousel({ image1, image2, image3 }) {
                 Get to know my journey and how I become a software developer. 
 
               </p>
-              <GenericButton text="Know More" />
+              <GenericButton text="Know More" to="/about" />
             </div>
           )}
         </SwiperSlide>

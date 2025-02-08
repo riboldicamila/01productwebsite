@@ -13,7 +13,7 @@ function AboutUs() {
           <h2>About </h2>
           <h3>How is my developer profile?</h3>
           <p>
-            Having +3 years of experience developing applications and websites. 
+            Have +3 years of experience developing applications and websites. 
             Passionate about UX/UI experience. Worked with API (RESTful applications), backend services, databases, and different frameworks.
           </p>
           <h4>Main skills </h4>
@@ -24,10 +24,10 @@ function AboutUs() {
             </li>
             <li>Experience with Python, SQL, Cherrypy framework</li>
           </ul>
-          <GenericButton />
+          <GenericButton text="LinkedIn" to="/" />
         </div>
         <div className="image-container">
-          <img src={pottery01} alt="Flowers in a Vase" />
+          <img src={pottery01} alt="tech" />
         </div>
       </div>
 

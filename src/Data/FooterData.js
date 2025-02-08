@@ -1,11 +1,11 @@
 export const aboutLinks = [
   { name: "Camila", path: "" },
-  { name: "About", path: "/about-us" },
+  { name: "About", path: "/about" },
 ];
 
 export const businessLinks = [
-  { name: "Technologies", path: "/collection" },
-  { name: "Creations", path: "/about-us" },
+  { name: "Technologies", path: "/technologies" },
+  { name: "Creations", path: "/about" },
   { name: "Q&A", path: "/contact" },
 ];
 

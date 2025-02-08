@@ -2,16 +2,14 @@ import "./Footer.css";
 import { FaTiktok, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logoImage from "../Images/logo.png";
-import { aboutLinks, businessLinks, contactInfo } from "../../Data/FooterData"; 
+import { aboutLinks, businessLinks, contactInfo } from "../../Data/FooterData";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-column">
         <img src={logoImage} alt="Logo" className="logo" />
-        <p className="text-light">
-          Lorem Ipsum is simply dummy text of the printing.
-        </p>
+        <p className="text-light">Engineering user-friendly solutions.</p>
         <div className="social-media-icons">
           <FaTiktok className="tiktok-icon" />
           <FaInstagram className="instagram-icon" />
@@ -42,9 +40,10 @@ const Footer = () => {
         <p>
           <strong>Location:</strong> {contactInfo.location}
         </p>
-    
+
         <p>
-          <strong>Email:</strong> <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+          <strong>Email:</strong>{" "}
+          <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
         </p>
       </div>
     </footer>
