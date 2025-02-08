@@ -3,30 +3,31 @@ import pottery02 from "./Components/Images/pottery02.jpg"
 
 
 export const mockData = {
-    title: "Exciting Benefits Await!",
-    description:
-      "Join us today to enjoy exclusive perks and opportunities that will elevate your experience.",
-    benefits: [
-      {
-        icon: "https://via.placeholder.com/50",
-        title: "Free Shipping",
-        description: "Enjoy free shipping on all orders, no minimum required.",
-      },
-      {
-        icon: "https://via.placeholder.com/50",
-        title: "Exclusive Discounts",
-        description:
-          "Get access to special discounts and promotions available only to members.",
-      },
-      {
-        icon: "https://via.placeholder.com/50",
-        title: "24/7 Customer Support",
-        description:
-          "Our support team is available around the clock to assist you with any queries.",
-      },
-    ],
-  };
-  
+  title: "Let's Build!",
+  description:
+    "With a passion for web development, I offer a blend of frontend expertise and backend integration to create seamless, user-friendly experiences. Let's work together to bring your vision to life.",
+  benefits: [
+    {
+      icon: "https://via.placeholder.com/50",
+      title: "Frontend Excellence",
+      description:
+        "Specializing in crafting responsive, intuitive user interfaces that drive engagement and satisfaction.",
+    },
+    {
+      icon: "https://via.placeholder.com/50",
+      title: "Backend & Database Expertise",
+      description:
+        "Seamlessly integrating backend systems and databases to ensure optimal performance and scalability.",
+    },
+    {
+      icon: "https://via.placeholder.com/50",
+      title: "Business & Tech Synergy",
+      description:
+        "Leveraging a technology management background to align technical solutions with business goals for maximum impact.",
+    },
+  ],
+};
+
 
   export const blogs = [
     {

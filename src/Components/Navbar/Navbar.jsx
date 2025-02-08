@@ -31,7 +31,7 @@ function Navbar() {
           <span className="nav-icon">
             <FaEnvelope />
           </span>
-          <span>info@gmail.com</span>
+          <span>cami.riboldi@gmail.com</span>
         </span>
         <span className="nav-icon">
           <FaGlobe />

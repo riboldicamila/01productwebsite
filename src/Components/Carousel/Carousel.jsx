@@ -4,7 +4,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./Carousel.css"
+import "./Carousel.css";
 import GenericButton from "../Button";
 
 function Carousel({ image1, image2, image3 }) {
@@ -50,14 +50,20 @@ function Carousel({ image1, image2, image3 }) {
               }}
             >
               <h2 style={{ fontSize: "1rem", textTransform: "uppercase" }}>
-                Art & Print
+                DEVELOPER
               </h2>
               <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
-                Create Your Clay
+                Crafting Solutions
               </h1>
-              <p style={{ fontSize: "1rem", maxWidth: "70%", marginBottom: "1rem" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                tincidunt n morbi habitasse viverra.
+              <p
+                style={{
+                  fontSize: "1rem",
+                  maxWidth: "70%",
+                  marginBottom: "1rem",
+                }}
+              >
+                Get to know my journey and how I become a software developer. 
+
               </p>
               <GenericButton text="Know More" />
             </div>

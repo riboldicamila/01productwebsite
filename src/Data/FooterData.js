@@ -1,5 +1,5 @@
 export const aboutLinks = [
-    { name: "About Us", path: "/about-us" },
+    { name: "About", path: "/about-us" },
     { name: "Home", path: "/" },
     { name: "Our Creations", path: "/collection" },
   ];

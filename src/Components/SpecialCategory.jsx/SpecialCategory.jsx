@@ -6,16 +6,16 @@ import "swiper/css/navigation";
 
 import "./SpecialCategory.css";
 
-import pottery01 from "../../Components/Images/pottery01.jpg";
-import pottery02 from "../../Components/Images/pottery02.jpg";
-import pottery03 from "../../Components/Images/pottery03.jpg";
+import pottery01 from "../../Components/Images/about01.jpg";
+import pottery02 from "../../Components/Images/about04.jpg";
+import pottery03 from "../../Components/Images/about03.jpg";
+import pottery04 from "../../Components/Images/about05.jpg";
 
 const images = [
   { src: pottery01, alt: "Pottery" },
   { src: pottery02, alt: "Plate" },
   { src: pottery03, alt: "Vases" },
-  { src: pottery03, alt: "Vases" },
-  { src: pottery03, alt: "Vases" },
+  { src: pottery04, alt: "Vases" },
 ];
 
 const SpecialCategory = () => {
@@ -40,10 +40,13 @@ const SpecialCategory = () => {
   return (
     <div className="special-category-container">
       <div className="exclusive-category">
-      <h1>Exclusive <span className="highlight-word">Category</span></h1>
-      <p>
-          Discover our fantastic early booking discounts & start planning your
-          journey.
+        <h1>
+          Software <span className="highlight-word">Development</span>
+        </h1>
+        <p>
+          Web developer skilled in frontend, backend, and database integration,
+          with a technology management background to deliver practical and
+          effective solutions.
         </p>
       </div>
       <Swiper
