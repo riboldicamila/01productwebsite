@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import pottery03 from "../../Components/Images/pottery03.jpg";
 
 import "./CollectionPage.css";
 import GenericButton from "../../Components/Button";
