@@ -3,7 +3,7 @@ import { FaEnvelope, FaGlobe } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; 
 import logoImage from '../Images/logo.png';
 import { navLinksLeft, navLinksRight } from '../../Data/NavbarData'; 
-import './navbar.css';
+import './Navbar.css';
 
 function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
