@@ -21,7 +21,10 @@ const CollectionPage = () => {
         <div className="banner-content">
           <span className="new-arrival">SOFTWARE DEVELOPMENT</span>
           <h2 className="banner-title">Skills</h2>
-          <GenericButton text="LinkedIn" />
+          <GenericButton
+            text="LinkedIn"
+            to="https://www.linkedin.com/in/camila-riboldi/"
+          />
         </div>
       </div>
 

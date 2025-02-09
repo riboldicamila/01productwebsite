@@ -5,31 +5,32 @@ import portfolio04 from "./Components/Images/portfolio04.png"
 import portfolio05 from "./Components/Images/portfolio05.png"
 
 
-export const mockData = {
+export const mockData = { 
   title: "Let's Build!",
   description:
-    "With a passion for web development, I offer a blend of frontend expertise and backend integration to create seamless, user-friendly experiences. Let's work together to bring your vision to life.",
+    "I create web applications that are functional, responsive, and easy to use. Let’s turn your ideas into reality.",
   benefits: [
     {
       icon: "https://via.placeholder.com/50",
-      title: "Frontend Excellence",
+      title: "Frontend",
       description:
-        "Specializing in crafting responsive, intuitive user interfaces that drive engagement and satisfaction.",
+        "Building clean, responsive interfaces that make websites easy to use.",
     },
     {
       icon: "https://via.placeholder.com/50",
-      title: "Backend & Database Expertise",
+      title: "Backend & Databases",
       description:
-        "Seamlessly integrating backend systems and databases to ensure optimal performance and scalability.",
+        "Connecting frontend and backend seamlessly to keep everything running smoothly.",
     },
     {
       icon: "https://via.placeholder.com/50",
-      title: "Business & Tech Synergy",
+      title: "Business & Tech",
       description:
-        "Leveraging a technology management background to align technical solutions with business goals for maximum impact.",
+        "Bringing a tech perspective to business needs to create practical solutions.",
     },
   ],
 };
+
 
 
 export const blogs = [
