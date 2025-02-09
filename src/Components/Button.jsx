@@ -8,7 +8,14 @@ function GenericButton({ className = '', text = 'SUBSCRIBE', to = '/' }) {
 
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
-  const handleClick = () => navigate(to);
+
+  const handleClick = () => {
+    if (to.startsWith('http://') || to.startsWith('https://')) {
+      window.open(to, '_blank', 'noopener,noreferrer');
+    } else {
+      navigate(to);
+    }
+  };
 
   return (
     <button

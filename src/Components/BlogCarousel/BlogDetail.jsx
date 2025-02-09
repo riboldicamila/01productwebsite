@@ -11,7 +11,7 @@ const BlogDetail = () => {
   if (!blog) {
     return (
       <div className="container">
-        <Link to="/" className="back-link">← Back to Articles</Link>
+        <Link to="/" className="back-link">← Back to Projects</Link>
         <h2>Artículo no encontrado</h2>
       </div>
     );
@@ -19,7 +19,7 @@ const BlogDetail = () => {
 
   return (
     <div className="container">
-      <Link to="/" className="back-link">← Back to Articles</Link>
+      <Link to="/" className="back-link">← Back to Projects</Link>
       
       <article className="blog-detail">
         <div className="detail-image">
@@ -36,7 +36,6 @@ const BlogDetail = () => {
         
         <div className="detail-content">
           <p>{blog.subtitle}</p>
-          <p>Contenido completo del blog...</p>
         </div>
       </article>
     </div>

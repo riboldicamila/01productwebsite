@@ -25,8 +25,8 @@ const Contact = () => {
         </div>
         
         <div className="contact-info">
-          <h2 className="get-in-touch">GET IN TOUCH</h2>
-          <p className="subtitle">Would love to connect, Lets Get In Touch!</p>
+          <h2 className="get-in-touch">CONNECT</h2>
+          <p className="subtitle">Would love to connect. Let&apos;s Get In Touch!</p>
           
           <div className="info-grid">
             <div className="info-item">
