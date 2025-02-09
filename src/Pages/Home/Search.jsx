@@ -1,52 +1,52 @@
 import React, { useState } from "react";
 import GenericButton from "../../Components/Button";
-import pottery03 from "../../Components/Images/pottery03.jpg";
-import "./Search.css"; // Import CSS file
+import qa01 from "../../Components/Images/qa01.jpg";
+import "./Search.css"; 
 
 const Search = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
 
   const faqData = [
     {
-      question: "What is Liliana made from?",
+      question: "What courses/trainings have you done?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida ac co ur icludin et tortor, id.",
+        "I have completed several courses to enhance my skills, including The Complete Python Bootcamp by Udemy (2024), Advanced React by Meta (2023), React Js 35-hour course (2023), Web Development | HTML-CSS-SASS 38-hour course (2023), and UX Design: From Concept to Prototype (2021).",
     },
     {
-      question: "What is so special about Liliana?",
+      question: "Do you have certifications?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida ac co ur icludin et tortor, id.",
+        "Yes, I have obtained the AWS Certified Cloud Practitioner certification (2024), demonstrating my knowledge of cloud computing fundamentals.",
     },
     {
-      question: "What is Liliana used for?",
+      question: "What is your level of English?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida ac co ur icludin et tortor, id.",
+        "My English proficiency is at a C1 level. I achieved the TOEFL iBT - CEFR Level C1 certification in 2020 and previously obtained the IGCSE English Certification in 2017.",
     },
   ];
 
-  const logos = [
-    "Restaurant",
-    "&Organic",
-    "Vintage",
-    "Organic Cafe",
-    "Company",
-    "Retro Logo",
+  const logos = [ 
+    "React Js",
+    "HTML",
+    "JavaScript",
+    "CSS",
+    "Git",
+    "SQL",
   ];
+
 
   return (
     <div className="container">
       <div className="content-wrapper">
         <div className="image-section">
-          <img src={pottery03} alt="Liliana pottery" className="main-image" />
+          <img src={qa01} alt="Liliana pottery" className="main-image" />
         </div>
-  
+
         <div className="content-section">
-          <h2 className="faq-title">FAQs</h2>
+          <h2 className="faq-title">Q&A</h2>
           <p className="faq-subtitle">
-            Discover our fantastic early booking discounts & start planning your
-            journey.
+            Combining creativity and logic to build user-friendly applications.
           </p>
-  
+
           {faqData.map((faq, index) => (
             <div key={index} className="faq-item">
               <div
@@ -65,11 +65,14 @@ const Search = () => {
               )}
             </div>
           ))}
-  
-          <GenericButton />
+
+          <GenericButton
+            text="LinkedIn"
+            to="https://www.linkedin.com/in/camila-riboldi/"
+          />
         </div>
       </div>
-  
+
       <div className="logo-section">
         {logos.map((logo, index) => (
           <div key={index} className="logo-item">
@@ -79,7 +82,6 @@ const Search = () => {
       </div>
     </div>
   );
-  
 };
 
 export default Search;
