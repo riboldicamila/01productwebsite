@@ -21,6 +21,24 @@ const images = [
 const SpecialCategory = () => {
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [slidesPerView, setSlidesPerView] = useState(3);
+
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      if (window.innerWidth < 768) {
+        setSlidesPerView(1);
+      } else if (window.innerWidth < 1024) {
+        setSlidesPerView(2);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    updateSlidesPerView();
+    window.addEventListener("resize", updateSlidesPerView);
+
+    return () => window.removeEventListener("resize", updateSlidesPerView);
+  }, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -52,9 +70,9 @@ const SpecialCategory = () => {
       <Swiper
         ref={swiperRef}
         modules={[Navigation]}
-        spaceBetween={30}
-        slidesPerView={3}
-        navigation={false} // Hide the navigation arrows
+        spaceBetween={20}
+        slidesPerView={slidesPerView}
+        navigation={false}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
         {images.map((image, index) => (
