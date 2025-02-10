@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import { FaEnvelope, FaGlobe } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; 
+import { FaEnvelope, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import logoImage from '../Images/logo.png';
-import { navLinksLeft, navLinksRight } from '../../Data/NavbarData'; 
+import { navLinksLeft, navLinksRight } from '../../Data/NavbarData';
 import './Navbar.css';
 
 function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -18,7 +19,6 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -37,8 +37,16 @@ function Navbar() {
           <FaGlobe />
         </span>
       </div>
+      
       <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
-        <div className="left-side">
+        <button 
+          className="hamburger-menu"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+        
+        <div className={`left-side ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <ul className="nav-links">
             {navLinksLeft.map((link) => (
               <li key={link.name}>
@@ -47,10 +55,12 @@ function Navbar() {
             ))}
           </ul>
         </div>
+
         <div className="logo">
-          <img className="logo" src={logoImage} alt="Logo" />
+          <img src={logoImage} alt="Logo" />
         </div>
-        <div className="right-side">
+
+        <div className={`right-side ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <ul className="nav-links">
             {navLinksRight.map((link) => (
               <li key={link.name}>
