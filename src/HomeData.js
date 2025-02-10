@@ -8,7 +8,7 @@ import portfolio05 from "./Components/Images/portfolio05.png"
 export const mockData = { 
   title: "Let's Build!",
   description:
-    "I create web applications that are functional, responsive, and easy to use. Let’s turn your ideas into reality.",
+    "Creating web applications that are functional, responsive, and easy to use. Turn your ideas into reality.",
   benefits: [
     {
       icon: "https://via.placeholder.com/50",
@@ -20,7 +20,7 @@ export const mockData = {
       icon: "https://via.placeholder.com/50",
       title: "Backend & Databases",
       description:
-        "Connecting frontend and backend seamlessly to keep everything running smoothly.",
+        "Connecting frontend and backend to keep everything running.",
     },
     {
       icon: "https://via.placeholder.com/50",

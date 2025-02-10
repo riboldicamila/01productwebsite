@@ -10,10 +10,10 @@ function AboutUs() {
       <div className="about-me-container">
         <div className="about-us-content">
           <h2>About </h2>
-          <h3>How is my developer profile?</h3>
+          <h3>My Developer Profile</h3>
           <p>
-            Have +3 years of experience developing applications and websites.
-            Passionate about UX/UI experience. Worked with API (RESTful
+            <b>+3 years</b> of experience developing applications and websites.  <br/>
+            Passionate about <b>UX/UI</b> experience. <br/> Worked with API (RESTful
             applications), backend services, databases, and different
             frameworks.
           </p>

@@ -62,9 +62,7 @@ const SpecialCategory = () => {
           Software <span className="highlight-word">Development</span>
         </h1>
         <p>
-          Web developer skilled in frontend, backend, and database integration,
-          with a technology management background to deliver practical and
-          effective solutions.
+        Web developer with a solid grip on frontend, backend, and databases—bringing a tech management background to build practical solutions.
         </p>
       </div>
       <Swiper

@@ -17,12 +17,11 @@ const OurServices = () => {
           <div className="icon-container">
             <img src={gifDocument} alt="GIF Animation" width="48" height="48" />
           </div>
-          <h3>BACHELORS DEGREE</h3>
+          <h3>BACHELOR’S DEGREE</h3>
           <p>
-            Graduated with a Bachelors in Information Systems from UBA,
+            Graduated with a Bachelor’s in  <b>Information Systems from UBA</b>,
             Argentina, with a strong foundation in both business and technology
-            management, empowering me to create solutions that align with
-            real-world needs.
+            management.
           </p>
         </div>
 
@@ -32,9 +31,8 @@ const OurServices = () => {
           </div>
           <h3>WORK EXPERIENCE</h3>
           <p>
-            I’ve worked on frontend and backend development, building web apps
-            and making sure everything runs smoothly. I’ve had the chance to
-            work at companies like JP Morgan and ExxonMobil, which gave me a lot
+           Worked on frontend and backend development, building applications. I’ve had the chance to
+            work at companies like <b>JP Morgan and ExxonMobil</b>, which gave me a lot
             of hands-on experience with real-world projects.
           </p>
         </div>
@@ -45,8 +43,8 @@ const OurServices = () => {
           </div>
           <h3>WEB DEVELOPMENT</h3>
           <p>
-            I build modern, responsive websites and web apps, connecting the
-            frontend with the backend. I work with tools like React, Node.js,
+           Building modern, <b>responsive websites</b> and apps, connecting the
+            frontend with the backend. Working with tools like React, Node.js,
             and databases.
           </p>
         </div>
