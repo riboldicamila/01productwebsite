@@ -8,17 +8,17 @@ const Search = () => {
 
   const faqData = [
     {
-      question: "What courses/trainings have you done?",
+      question: "What courses/trainings have I done?",
       answer:
         "I have completed several courses to enhance my skills, including The Complete Python Bootcamp by Udemy (2024), Advanced React by Meta (2023), React Js 35-hour course (2023), Web Development | HTML-CSS-SASS 38-hour course (2023), and UX Design: From Concept to Prototype (2021).",
     },
     {
-      question: "Do you have certifications?",
+      question: "Do I have certifications?",
       answer:
         "Yes, I have obtained the AWS Certified Cloud Practitioner certification (2024), demonstrating my knowledge of cloud computing fundamentals.",
     },
     {
-      question: "What is your level of English?",
+      question: "What is my level of English?",
       answer:
         "My English proficiency is at a C1 level. I achieved the TOEFL iBT - CEFR Level C1 certification in 2020 and previously obtained the IGCSE English Certification in 2017.",
     },
