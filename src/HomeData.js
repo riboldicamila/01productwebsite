@@ -41,16 +41,18 @@ export const blogs = [
     author: "Camila Riboldi",
     subtitle: "An ongoing project utilizing React, global state management with UseContext, Firebase authentication, and API connections to streamline daily operations.",
     image: portfolio02,
-    slug: "daily-panel-app"
+    slug: "daily-panel-app",
+    url: "https://daily-panel-rosy.vercel.app/"
   },
   {
     id: 2,
     title: "Projects & Portfolio - My Digital Showcase",
     date: "08 Feb 2025",
     author: "Camila Riboldi",
-    subtitle: "A professional landing page built with React, incorporating Material UI, GSAP animations, and dynamic routing to enhance user experience.",
+    subtitle: "A landing page built with React, incorporating Material UI, GSAP animations, and dynamic routing to enhance user experience.",
     image: portfolio04,
-    slug: "projects-portfolio"
+    slug: "projects-portfolio",
+    url: "https://camila-riboldi.vercel.app/"
   },
   {
     id: 3,
@@ -59,24 +61,28 @@ export const blogs = [
     author: "Camila Riboldi",
     subtitle: "A minimalist web page created with React, CSS, and Bootstrap, focusing on clean UI design and smooth user interactions.",
     image: portfolio03,
-    slug: "minimal-web-design"
+    slug: "minimal-web-design",
+    url: "https://minimalistic-web-sample.vercel.app/",
   },
   {
     id: 4,
     title: "Swiss Media - Responsive Website Design",
     date: "08 Feb 2025",
     author: "Camila Riboldi",
-    subtitle: "A responsive website built with HTML, CSS, Sass, and Bootstrap, leveraging various libraries to enhance interactivity and animation.",
+    subtitle: "A responsive website built with HTML, CSS, Sass, and Bootstrap, using various libraries to enhance interactivity and animation.",
     image: portfolio05,
-    slug: "swiss-media"
+    slug: "swiss-media",
+    url: "https://riboldicamila.github.io/swissmedia-basic-html-saas/",
+
   },
   {
     id: 5,
-    title: "Corporate Projects - Enterprise Solutions",
+    title: "Corporate Projects",
     date: "08 Feb 2025",
     author: "Camila Riboldi",
-    subtitle: "A set of corporate projects developed with React, Python, and SQL, utilizing internal component libraries and CI/CD pipelines for automation.",
+    subtitle: "I’ve had the chance to work at companies like JP Morgan and ExxonMobil where I worked on frontend and backend development, building applications.",
     image: portfolio01,
-    slug: "corporate-projects"
+    slug: "corporate-projects",
+    url: "https://riboldi-camila-sw.vercel.app/",
   }
 ];

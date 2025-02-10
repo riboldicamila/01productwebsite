@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogs } from '../../HomeData.js';
+import GenericButton from '../Button';
 import './BlogStyles.css';
 
 const BlogDetail = () => {
@@ -37,6 +38,8 @@ const BlogDetail = () => {
         <div className="detail-content">
           <p>{blog.subtitle}</p>
         </div>
+        
+        <GenericButton text = 'Go to site' to = {blog.url}/>
       </article>
     </div>
   );
