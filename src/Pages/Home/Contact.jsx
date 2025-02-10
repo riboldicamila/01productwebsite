@@ -1,6 +1,6 @@
 import './Contact.css';
 import { contactInfo } from '../../Data/ContactData'; 
-import qa01 from "../../Components/Images/qa01.jpg";
+import contact01 from "../../Components/Images/contact01.jpg";
 import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; 
 
 
@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-image">
           <img 
-            src={qa01}
+            src={contact01}
             alt="tech pic" 
             className="main-image"
           />

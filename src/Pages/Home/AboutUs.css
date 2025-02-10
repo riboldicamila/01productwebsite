@@ -8,6 +8,7 @@
     background-color: #f8f8f8; 
     border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    justify-content: center;
   }
   
   .about-me-container .about-us-content {
@@ -102,7 +103,6 @@
   @media screen and (min-width: 768px) {
     .about-me-container {
       flex-direction: row;
-      justify-content: space-between;
       padding: 80px; 
     }
   
