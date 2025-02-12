@@ -12,7 +12,7 @@ import pottery03 from "../../Components/Images/about03.jpg";
 import pottery04 from "../../Components/Images/about05.jpg";
 
 const images = [
-  { src: pottery01, alt: "Pottery" },
+  { src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355097/about01_n9nhnq.jpg", alt: "Pottery" },
   { src: pottery02, alt: "Plate" },
   { src: pottery03, alt: "Vases" },
   { src: pottery04, alt: "Vases" },
