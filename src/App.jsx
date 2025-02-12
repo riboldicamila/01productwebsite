@@ -3,11 +3,11 @@ import './App.css';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
-import CreationsGrid from './Components/BlogCarousel/CreationsGrid';
+import CreationsGrid from './Components/CreationsCarousel/CreationsGrid';
 import AboutUs from './Pages/Home/AboutUs';
 import Contact from './Pages/Home/Contact';
 import CollectionPage from './Pages/Home/Collection';
-import CreationsDetails from './Components/BlogCarousel/CreationsDetails';
+import CreationsDetails from './Components/CreationsCarousel/CreationsDetails';
 import WebsiteSearch from './Pages/Home/Search';
 
 
