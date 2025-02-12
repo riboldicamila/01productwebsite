@@ -6,16 +6,23 @@ import "swiper/css/navigation";
 
 import "./SpecialCategory.css";
 
-import pottery01 from "../../Components/Images/about01.jpg";
-import pottery02 from "../../Components/Images/about04.jpg";
-import pottery03 from "../../Components/Images/about03.jpg";
-import pottery04 from "../../Components/Images/about05.jpg";
-
 const images = [
-  { src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355097/about01_n9nhnq.jpg", alt: "Pottery" },
-  { src: pottery02, alt: "Plate" },
-  { src: pottery03, alt: "Vases" },
-  { src: pottery04, alt: "Vases" },
+  {
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355097/about01_n9nhnq.jpg",
+    alt: "About picture",
+  },
+  {
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355411/Personal%20Website/about05_r2eur7.jpg",
+    alt: "About picture",
+  },
+  {
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355411/Personal%20Website/about03_epizdc.jpg",
+    alt: "About picture",
+  },
+  {
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355414/Personal%20Website/about04_w8qejs.jpg",
+    alt: "About picture",
+  },
 ];
 
 const SpecialCategory = () => {
@@ -62,7 +69,9 @@ const SpecialCategory = () => {
           Software <span className="highlight-word">Development</span>
         </h1>
         <p>
-        Web developer with a solid grip on frontend, backend, and databases—bringing a tech management background to build practical solutions.
+          Web developer with a solid grip on frontend, backend, and
+          databases—bringing a tech management background to build practical
+          solutions.
         </p>
       </div>
       <Swiper
