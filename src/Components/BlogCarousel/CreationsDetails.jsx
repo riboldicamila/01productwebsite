@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogs } from '../../HomeData.js';
-import GenericButton from '../Button';
-import './BlogStyles.css';
+import GenericButton from '../Button.jsx';
+import './CreationsStyles.css';
 
-const BlogDetail = () => {
+const CreationsDetails = () => {
   const { slug } = useParams();
   
   const blog = blogs.find((b) => b.slug === slug);
@@ -45,4 +45,4 @@ const BlogDetail = () => {
   );
 };
 
-export default BlogDetail;
+export default CreationsDetails;

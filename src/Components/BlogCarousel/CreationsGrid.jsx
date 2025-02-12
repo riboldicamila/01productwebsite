@@ -2,9 +2,9 @@ import React, {useParams} from 'react';
 import { Link } from 'react-router-dom';
 import { blogs } from "../../HomeData.js";
 
-import './BlogStyles.css';
+import './CreationsStyles.css';
 
-const BlogGrid = () => {
+const CreationsGrid = () => {
 
   return (
     <div className="container">
@@ -41,4 +41,4 @@ const BlogGrid = () => {
   );
 };
 
-export default BlogGrid;
+export default CreationsGrid;
