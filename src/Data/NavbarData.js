@@ -1,11 +1,12 @@
 export const navLinksLeft = [
-    { name: "Pampa", path: "/" },
-    { name: "History", path: "/about" },
-    { name: "FAQ", path: "/qa" },
+    { name: "Camila", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Technologies", path: "/technologies" },
   ];
   
   export const navLinksRight = [
-    { name: "Shop", path: "/creations" },
+    { name: "Creations", path: "/creations" },
+    { name: "Q&A", path: "/qa" },
     { name: "Contact", path: "/contact" },
   ];
   
