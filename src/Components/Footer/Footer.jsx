@@ -6,7 +6,6 @@ import { aboutLinks, businessLinks, contactInfo } from "../../Data/FooterData";
 
 import "./Footer.css";
 
-
 const Footer = () => {
   return (
     <footer className="footer">

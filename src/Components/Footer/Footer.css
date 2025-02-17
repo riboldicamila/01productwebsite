@@ -5,8 +5,8 @@
   color: lightgrey;
   padding: 80px;
   gap: 20px;
-}
 
+  
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -51,7 +51,8 @@
   color: white; 
 }
 
-/* Responsive Design */
+}
+
 @media (max-width: 1024px) {
   .footer {
       grid-template-columns: repeat(2, minmax(0, 1fr));

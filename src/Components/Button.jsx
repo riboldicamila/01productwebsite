@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import '../Components/Button.css';
 
 function GenericButton({ className = '', text = 'SUBSCRIBE', to = '/' }) {
