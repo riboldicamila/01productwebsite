@@ -36,13 +36,13 @@ export const mockData = {
 export const blogs = [
   {
     id: 1,
-    title: "Daily Panel - Web Application",
+    title: "Pampa Bakery Website",
     date: "08 Feb 2025",
     author: "Camila Riboldi",
-    subtitle: "An ongoing project utilizing React, global state management with UseContext, Firebase authentication, and API connections to streamline daily operations.",
-    image: portfolio02,
+    subtitle: "A completed project for a bakery website using React.js, Redux for global state management, and Firebase.",
+    image:"https://res.cloudinary.com/dav7tzdzv/image/upload/v1739806305/E-commerce_Sample_qmii38.png",
     slug: "daily-panel-app",
-    url: "https://daily-panel-rosy.vercel.app/"
+    url: "https://pampa-bakery.vercel.app/"
   },
   {
     id: 2,
@@ -57,20 +57,20 @@ export const blogs = [
   {
     id: 3,
     title: "Minimal Web Design - React Practice",
-    date: "08 Feb 2025",
+    date: "02 Jan 2025",
     author: "Camila Riboldi",
     subtitle: "A minimalist web page created with React, CSS, and Bootstrap, focusing on clean UI design and smooth user interactions.",
-    image: portfolio03,
+    image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739805391/Copy_of_personal_website_tenfxj.png",
     slug: "minimal-web-design",
     url: "https://minimalistic-web-sample.vercel.app/",
   },
   {
     id: 4,
     title: "Swiss Media - Responsive Website Design",
-    date: "08 Feb 2025",
+    date: "05 Mar 2023",
     author: "Camila Riboldi",
     subtitle: "A responsive website built with HTML, CSS, Sass, and Bootstrap, using various libraries to enhance interactivity and animation.",
-    image: portfolio05,
+    image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739806539/E-commerce_Sample_1_mqbnxi.png",
     slug: "swiss-media",
     url: "https://riboldicamila.github.io/swissmedia-basic-html-saas/",
 
@@ -78,7 +78,7 @@ export const blogs = [
   {
     id: 5,
     title: "Corporate Projects",
-    date: "08 Feb 2025",
+    date: "15 Nov 2025",
     author: "Camila Riboldi",
     subtitle: "I’ve had the chance to work at companies like JP Morgan and ExxonMobil where I worked on frontend and backend development, building applications.",
     image: portfolio01,
