@@ -1,7 +1,8 @@
-import "./OurServices.css";
 import gifComputer from "../Images/computer-gif.gif";
 import gifDocument from "../Images/document-gif.gif";
 import gifWork from "../Images/work-gif.gif";
+
+import "./OurServices.css";
 
 const OurServices = () => {
   return (

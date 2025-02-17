@@ -52,6 +52,34 @@
     font-size: 0.9rem;
     color: #888;
   }
+
+  .service-card h3 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card h3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.9s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .service-card:hover h3 {
+    letter-spacing: 2px;
+  }
+  
+  .service-card:hover h3::after {
+    width: 100%;
+  }
+  
   
   @media (max-width: 768px) {
     .service-cards {
