@@ -35,7 +35,7 @@ const Search = () => {
 
 
   return (
-    <div className="container">
+    <div className="qa-container">
       <div className="content-wrapper">
         <div className="image-section">
           <img src={qa01} alt="Liliana pottery" className="main-image" />

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
@@ -10,6 +9,7 @@ import CollectionPage from './Pages/Home/Collection';
 import CreationsDetails from './Components/CreationsCarousel/CreationsDetails';
 import WebsiteSearch from './Pages/Home/Search';
 
+import './App.css';
 
 function App() {
   return (
