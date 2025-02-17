@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import "./CollectionPage.css";
 import GenericButton from "../../Components/Button";
 
 import react from "../../Components/Images/react.jpg";
@@ -16,6 +15,7 @@ import jira from "../../Components/Images/jira.png";
 import cicd from "../../Components/Images/cdci.png";
 import scrum from "../../Components/Images/scrum.png";
 
+import "./CollectionPage.css";
 
 
 const CollectionPage = () => {
