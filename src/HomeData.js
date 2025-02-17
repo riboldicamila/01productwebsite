@@ -1,9 +1,4 @@
 import portfolio01 from "./Components/Images/portfolio01.png"
-import portfolio02 from "./Components/Images/portfolio02.png"
-import portfolio03 from "./Components/Images/portfolio03.png"
-import portfolio04 from "./Components/Images/portfolio04.png"
-import portfolio05 from "./Components/Images/portfolio05.png"
-
 
 export const mockData = { 
   title: "Let's Build!",
@@ -31,9 +26,7 @@ export const mockData = {
   ],
 };
 
-
-
-export const blogs = [
+export const projects = [
   {
     id: 1,
     title: "Pampa Bakery Website",

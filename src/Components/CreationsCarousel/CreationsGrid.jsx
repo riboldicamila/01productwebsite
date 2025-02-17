@@ -1,6 +1,6 @@
 import React, { useParams } from "react";
 import { Link } from "react-router-dom";
-import { blogs } from "../../HomeData.js";
+import { projects } from "../../HomeData.js";
 
 import "./CreationsStyles.css";
 
@@ -12,24 +12,24 @@ const CreationsGrid = () => {
           <h1>Projects</h1>
         </div>
 
-        <div className="blog-grid">
-          {blogs.map((blog) => (
-            <article key={blog.id} className="blog-card">
-              <Link to={`/blog/${blog.slug}`} className="blog-link">
-                <div className="blog-image">
-                  <img src={blog.image} alt={blog.title} />
+        <div className="project-grid">
+          {projects.map((project) => (
+            <article key={project.id} className="project-card">
+              <Link to={`/project/${project.slug}`} className="project-link">
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
                 </div>
 
-                <div className="blog-content">
-                  <h2>{blog.title}</h2>
+                <div className="project-content">
+                  <h2>{project.title}</h2>
 
-                  <div className="blog-meta">
-                    <span>{blog.date}</span>
+                  <div className="project-meta">
+                    <span>{project.date}</span>
                     <span className="separator">•</span>
-                    <span>{blog.author}</span>
+                    <span>{project.author}</span>
                   </div>
 
-                  <p className="blog-subtitle">{blog.subtitle}</p>
+                  <p className="project-subtitle">{project.subtitle}</p>
 
                   <span className="read-more">READ MORE</span>
                 </div>

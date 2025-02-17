@@ -10,3 +10,7 @@
   
   .subscribe-button:hover {
     background-color: var( --color-darker-grey); }
+
+.go-margin{
+  margin-top: 20px;
+}

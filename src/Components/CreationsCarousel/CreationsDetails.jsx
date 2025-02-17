@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-import { blogs } from '../../HomeData.js';
+import { projects } from '../../HomeData.js';
 import GenericButton from '../Button.jsx';
 
 import './CreationsStyles.css';
@@ -9,9 +9,9 @@ import './CreationsStyles.css';
 const CreationsDetails = () => {
   const { slug } = useParams();
   
-  const blog = blogs.find((b) => b.slug === slug);
+  const project = projects.find((b) => b.slug === slug);
 
-  if (!blog) {
+  if (!project) {
     return (
       <div className="container">
         <Link to="/" className="back-link">← Back to Projects</Link>
@@ -24,24 +24,24 @@ const CreationsDetails = () => {
     <div className="creations-container">
       <Link to="/projects" className="back-link">← Back to Projects</Link>
       
-      <article className="blog-detail">
+      <article className="project-detail">
         <div className="detail-image">
-          <img src={blog.image} alt={blog.title} />
+          <img src={project.image} alt={project.title} />
         </div>
         
-        <h1>{blog.title}</h1>
+        <h1>{project.title}</h1>
         
         <div className="detail-meta">
-          <span>{blog.date}</span>
+          <span>{project.date}</span>
           <span className="separator">•</span>
-          <span>{blog.author}</span>
+          <span>{project.author}</span>
         </div>
         
         <div className="detail-content">
-          <p>{blog.subtitle}</p>
+          <p>{project.subtitle}</p>
         </div>
         
-        <GenericButton text = 'Go to site' to = {blog.url}/>
+        <GenericButton text = 'Go to site' to = {project.url} className="go-margin"/>
       </article>
     </div>
   );
