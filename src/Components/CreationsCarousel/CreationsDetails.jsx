@@ -20,7 +20,7 @@ const CreationsDetails = () => {
 
   return (
     <div className="container">
-      <Link to="/creations" className="back-link">← Back to Projects</Link>
+      <Link to="/projects" className="back-link">← Back to Projects</Link>
       
       <article className="blog-detail">
         <div className="detail-image">

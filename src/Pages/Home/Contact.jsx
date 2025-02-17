@@ -1,8 +1,8 @@
-import './Contact.css';
 import { contactInfo } from '../../Data/ContactData'; 
 import contact01 from "../../Components/Images/contact01.jpg";
 import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; 
 
+import './Contact.css';
 
 const Contact = () => {
   const socialLinks = [
@@ -25,7 +25,6 @@ const Contact = () => {
         </div>
         
         <div className="contact-info">
-          <h2 className="get-in-touch">CONNECT</h2>
           <p className="subtitle">Would love to connect. Let&apos;s Get In Touch!</p>
           
           <div className="info-grid">

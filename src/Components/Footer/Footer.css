@@ -1,8 +1,7 @@
 .footer { 
-  background: url("../Images/footer-background.png") no-repeat center center/cover;
+  background-color: #191919;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  background-color: black;
   color: lightgrey;
   padding: 80px;
   gap: 20px;

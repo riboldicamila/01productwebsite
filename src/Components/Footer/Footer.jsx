@@ -12,7 +12,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-column">
         <img src={logoImage} alt="Logo" className="logo" />
-        <p className="text-light">Engineering user-friendly solutions.</p>
       </div>
       <div className="footer-column">
         <h3 className="title">About Us</h3>
