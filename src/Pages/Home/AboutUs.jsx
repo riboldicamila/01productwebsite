@@ -10,19 +10,30 @@ function AboutUs() {
       <div className="about-me-container">
         <div className="about-us-content">
           <h2>About </h2>
-          <h3>My Developer Profile</h3>
+          <h3>My Story</h3>
           <p>
-            <b>+3 years</b> of experience developing applications and websites.  <br/>
-            Passionate about <b>UX/UI</b> experience. <br/> Worked with API (RESTful
-            applications), backend services, databases, and different
-            frameworks.
+            My name is Camila. I am originally from Buenos Aires, Argentina. I
+            studied at the University of Buenos Aires for my bachelor’s degree
+            and, while doing so, started working in tech, especially with
+            full-stack development teams. At that time, I realized that software
+            development is something I really enjoy and that challenges me every
+            day. I started to dig deeper into it and specialize in the parts I
+            liked the most, such as frontend and React.js.
           </p>
-          <h4>Main skills </h4>
-          <ul>
-            <li>React JS, HTML, CSS</li>
-            <li>JavaScript (ongoing training on Node.js+Express+MongoDB)</li>
-            <li>Experience with Python, SQL, Cherrypy framework</li>
-          </ul>
+          <p>
+            While working and finishing my studies, I also realized how much I
+            enjoy the whole development process—being part of a team,
+            understanding agile methodologies, having productive discussions
+            with the team, and being involved in a project from beginning to
+            end.
+          </p>
+          <p>
+            My last role was at an American bank, where I gained a lot of growth
+            and experience. However, due to a relocation to Italy, I had to
+            leave that behind. Now, I’m looking for a new role to keep doing
+            what I enjoy.
+          </p>
+
           <GenericButton
             text="LinkedIn"
             to="https://www.linkedin.com/in/camila-riboldi/"

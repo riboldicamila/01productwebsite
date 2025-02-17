@@ -69,7 +69,7 @@ const SpecialCategory = () => {
           Software <span className="highlight-word">Development</span>
         </h1>
         <p>
-          Web developer with a solid grip on frontend, backend, and
+          Developer with a solid grip on frontend, backend, and
           databases—bringing a tech management background to build practical
           solutions.
         </p>
