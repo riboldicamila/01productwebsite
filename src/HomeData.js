@@ -45,16 +45,6 @@ export const blogs = [
     url: "https://pampa-bakery.vercel.app/"
   },
   {
-    id: 2,
-    title: "Projects & Portfolio - My Digital Showcase",
-    date: "08 Feb 2025",
-    author: "Camila Riboldi",
-    subtitle: "A landing page built with React, incorporating Material UI, GSAP animations, and dynamic routing to enhance user experience.",
-    image: portfolio04,
-    slug: "projects-portfolio",
-    url: "https://camila-riboldi.vercel.app/"
-  },
-  {
     id: 3,
     title: "Minimal Web Design - React Practice",
     date: "02 Jan 2025",
@@ -84,5 +74,15 @@ export const blogs = [
     image: portfolio01,
     slug: "corporate-projects",
     url: "https://riboldi-camila-sw.vercel.app/",
-  }
+  },
+  {
+    id: 2,
+    title: "Projects & Portfolio",
+    date: "10 Jun 2024",
+    author: "Camila Riboldi",
+    subtitle: "A landing page built with React, incorporating Material UI, GSAP animations, and dynamic routing to enhance user experience.",
+    image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739806813/E-commerce_Sample_2_cryfkp.png",
+    slug: "projects-portfolio",
+    url: "https://camila-riboldi.vercel.app/"
+  },
 ];
