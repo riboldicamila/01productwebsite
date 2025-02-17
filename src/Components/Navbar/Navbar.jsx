@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 import logoImage from '../Images/logo.png';
 import { navLinksLeft, navLinksRight } from '../../Data/NavbarData';
+
 import './Navbar.css';
 
 function Navbar() {

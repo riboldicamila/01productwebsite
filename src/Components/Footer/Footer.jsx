@@ -1,8 +1,11 @@
-import "./Footer.css";
 import { FaTiktok, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 import logoImage from "../Images/logoWhite.png";
 import { aboutLinks, businessLinks, contactInfo } from "../../Data/FooterData";
+
+import "./Footer.css";
+
 
 const Footer = () => {
   return (
