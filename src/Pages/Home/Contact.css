@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #333;
+    color: var( --color-darker-grey);
   }
   
   .contact-content {
@@ -36,11 +36,11 @@
   .get-in-touch {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var( --color-darker-grey);
   }
   
   .subtitle {
-    color: #666;
+    color: var( --color-dark-grey);
     margin-bottom: 30px;
   }
   
@@ -53,20 +53,20 @@
   
   .info-item h3 {
     font-size: 1.1rem;
-    color: #333;
+    color: var( --color-darker-grey);
     margin-bottom: 10px;
     font-weight: 600;
   }
   
   .info-item p {
-    color: #666;
+    color: var(--color-dark-grey);
     line-height: 1.5;
   }
   
   .social-links h3 {
     margin-bottom: 15px;
     font-size: 1.1rem;
-    color: #333;
+    color: var( --color-darker-grey);
   }
   
   .social-icons {
@@ -82,13 +82,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: var( --color-darker-grey);
     text-decoration: none;
     transition: all 0.3s ease;
   }
   
   .social-icon:hover {
-    background-color: #333;
+    background-color: var( --color-darker-grey);
     color: white;
   }
   

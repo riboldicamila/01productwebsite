@@ -17,12 +17,12 @@
   }
   
   .rss-link {
-    color: #666;
+    color: var(--color-dark-grey);
     text-decoration: none;
   }
   
   .rss-link:hover {
-    color: #333;
+    color: var( --color-darker-grey);
   }
   
   .blog-grid {
@@ -71,7 +71,7 @@
   
   .blog-meta {
     font-size: 0.875rem;
-    color: #666;
+    color: var(--color-dark-grey);
     margin-bottom: 10px;
   }
   
@@ -97,13 +97,13 @@
   /* Blog Detail Styles */
   .back-link {
     display: inline-block;
-    color: #666;
+    color: var(--color-dark-grey);
     text-decoration: none;
     margin-bottom: 30px;
   }
   
   .back-link:hover {
-    color: #333;
+    color: var( --color-darker-grey);
   }
   
   .blog-detail {
@@ -132,13 +132,13 @@
   
   .detail-meta {
     font-size: 1rem;
-    color: #666;
+    color: var(--color-dark-grey);
     margin-bottom: 30px;
   }
   
   .detail-content {
     line-height: 1.8;
-    color: #333;
+    color: var( --color-darker-grey);
   }
   
   @media (max-width: 768px) {

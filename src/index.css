@@ -1,0 +1,23 @@
+/* 
+COLOR PALLETE
+
+Yellow: #e4c110
+Orange: #ff5722
+Brown: #795548 
+Black: #000000
+White: #ffffff
+Grey: #9e9e9e 
+
+*/
+
+:root {
+    --color-yellow: #e4c110;
+    --color-orange: #ff5722;
+    --color-brown: #795548;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #9e9e9e;
+    --color-dark-grey: #666666;
+    --color-darker-grey: #333333;
+  }
+  
