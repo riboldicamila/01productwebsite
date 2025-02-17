@@ -12,6 +12,7 @@ const Contact = () => {
   ];
   
   return (
+    <div className='background-container'>
     <div className="contact-container">
       <h1 className="contact-title">Contact</h1>
       
@@ -56,6 +57,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

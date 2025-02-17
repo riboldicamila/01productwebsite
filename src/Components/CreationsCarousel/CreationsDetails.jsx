@@ -1,7 +1,9 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+
 import { blogs } from '../../HomeData.js';
 import GenericButton from '../Button.jsx';
+
 import './CreationsStyles.css';
 
 const CreationsDetails = () => {
@@ -19,7 +21,7 @@ const CreationsDetails = () => {
   }
 
   return (
-    <div className="container">
+    <div className="creations-container">
       <Link to="/projects" className="back-link">← Back to Projects</Link>
       
       <article className="blog-detail">
