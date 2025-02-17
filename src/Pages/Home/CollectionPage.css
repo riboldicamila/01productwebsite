@@ -16,10 +16,12 @@
   }
   
   .banner {
-    background-color: #f5f5f5;
-    padding: 40px;
+    background-image: url('https://res.cloudinary.com/dav7tzdzv/image/upload/v1739800708/Mind_Map_skjyq8.png');
+    background-size: cover;
+    background-position: center;    padding: 40px;
     text-align: center;
     margin-bottom: 30px;
+    color: white;
   }
   
   .new-arrival {
@@ -65,6 +67,7 @@
     border: 1px solid #ddd;
     padding: 5px 10px;
     cursor: pointer;
+    color: black;
   }
   
   .view-btn.active {
