@@ -18,7 +18,7 @@
 
   .main-image {
     width: 100%;
-    height: auto;
+    max-height: 400px;
     object-fit: cover;
   }
 
@@ -83,34 +83,15 @@
     font-size: 14px;
     margin: 10px;
   }
-
-  .parallax-image {
-    height: 700px;
-    background-image: url("https://res.cloudinary.com/dav7tzdzv/image/upload/v1739546894/croissants-tray_23-2147985149_dzjity.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .parallax-image::before {
-    content: "";
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    transform: translateZ(0);
-    will-change: transform;
-  }
-  
-
 }
+
+.parallax-image {
+  width: 100%;
+  height: 700px;
+  background-image: url("https://res.cloudinary.com/dav7tzdzv/image/upload/v1739805025/business-company-concept_hslu7s.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+

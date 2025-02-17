@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import GenericButton from "../../Components/Button";
 import qa01 from "../../Components/Images/qa01.jpg";
-import "./Search.css"; 
+
+import "./Search.css";
 
 const Search = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -24,63 +25,59 @@ const Search = () => {
     },
   ];
 
-  const logos = [ 
-    "React Js",
-    "HTML",
-    "JavaScript",
-    "CSS",
-    "Git",
-    "SQL",
-  ];
-
+  const logos = ["React Js", "HTML", "JavaScript", "CSS", "Git", "SQL"];
 
   return (
-    <div className="qa-container">
-      <div className="content-wrapper">
-        <div className="image-section">
-          <img src={qa01} alt="Liliana pottery" className="main-image" />
+    <>
+      <div className="qa-container">
+        <div className="content-wrapper">
+          <div className="image-section">
+            <img src={qa01} alt="Liliana pottery" className="main-image" />
+          </div>
+
+          <div className="content-section">
+            <h2 className="faq-title">Q&A</h2>
+            <p className="faq-subtitle">
+              Combining creativity and logic to build user-friendly
+              applications.
+            </p>
+
+            {faqData.map((faq, index) => (
+              <div key={index} className="faq-item">
+                <div
+                  className="faq-question"
+                  onClick={() =>
+                    setActiveQuestion(activeQuestion === index ? null : index)
+                  }
+                >
+                  {faq.question}
+                  <span className="dropdown-icon">
+                    {activeQuestion === index ? "▲" : "▼"}
+                  </span>
+                </div>
+                {activeQuestion === index && (
+                  <div className="faq-answer">{faq.answer}</div>
+                )}
+              </div>
+            ))}
+
+            <GenericButton
+              text="LinkedIn"
+              to="https://www.linkedin.com/in/camila-riboldi/"
+            />
+          </div>
         </div>
 
-        <div className="content-section">
-          <h2 className="faq-title">Q&A</h2>
-          <p className="faq-subtitle">
-            Combining creativity and logic to build user-friendly applications.
-          </p>
-
-          {faqData.map((faq, index) => (
-            <div key={index} className="faq-item">
-              <div
-                className="faq-question"
-                onClick={() =>
-                  setActiveQuestion(activeQuestion === index ? null : index)
-                }
-              >
-                {faq.question}
-                <span className="dropdown-icon">
-                  {activeQuestion === index ? "▲" : "▼"}
-                </span>
-              </div>
-              {activeQuestion === index && (
-                <div className="faq-answer">{faq.answer}</div>
-              )}
+        <div className="logo-section">
+          {logos.map((logo, index) => (
+            <div key={index} className="logo-item">
+              {logo}
             </div>
           ))}
-
-          <GenericButton
-            text="LinkedIn"
-            to="https://www.linkedin.com/in/camila-riboldi/"
-          />
         </div>
       </div>
-
-      <div className="logo-section">
-        {logos.map((logo, index) => (
-          <div key={index} className="logo-item">
-            {logo}
-          </div>
-        ))}
-      </div>
-    </div>
+      <div className="parallax-image"></div>
+    </>
   );
 };
 
