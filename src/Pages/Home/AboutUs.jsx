@@ -21,13 +21,13 @@ function AboutUs() {
             day. I started to dig deeper into it and specialize in the parts I
             liked the most, such as frontend and React.js.
           </p>
-          <p>
+          {/* <p>
             While working and finishing my studies, I also realized how much I
             enjoy the whole development process—being part of a team,
             understanding agile methodologies, having productive discussions
             with the team, and being involved in a project from beginning to
             end.
-          </p>
+          </p> */}
           <p>
             My last role was at an American bank, where I gained a lot of growth
             and experience. However, due to a relocation to Italy, I had to
