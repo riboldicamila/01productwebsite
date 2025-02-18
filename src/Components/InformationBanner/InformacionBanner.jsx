@@ -1,5 +1,4 @@
 import AnimatedGif from '../AnimatedGif';
-import GenericButton from '../Button';
 
 import './InformationBanner.css'; 
 
@@ -17,7 +16,6 @@ const InformationBanner = ({ title, description, benefits }) => {
           </div>
         ))}
       </div>
-      <GenericButton text="Check Projects" to="/projects" />
     </section>
   );
 };
