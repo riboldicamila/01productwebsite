@@ -35,7 +35,7 @@ export const projects = [
     subtitle: "A website project built with Node.js, Express, MongoDB, React.js, Axios, and Tailwind.",
     image:"https://res.cloudinary.com/dav7tzdzv/image/upload/v1740142550/7c2fca4a-7ba5-4b9d-af35-f758db053a37.png",
     slug: "patagonia-website",
-    url: "https://pampa-bakery.vercel.app/"
+    url: "https://patagonia-backend.onrender.com/"
   },
   {
     id: 1,
