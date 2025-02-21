@@ -1,9 +1,11 @@
 import React from "react";
-import "./AboutUs.css";
+
 import OurServices from "../../Components/OurServices/OurServices";
 import pottery01 from "../../Components/Images/tech02.jpg";
 import GenericButton from "../../Components/Button";
 import IconsCarousel from "../../Components/IconsCarrousel/IconsCarrousel";
+
+import "./AboutUs.css";
 
 function AboutUs() {
   return (

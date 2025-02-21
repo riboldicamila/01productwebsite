@@ -1,6 +1,7 @@
+import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; 
+
 import { contactInfo } from '../../Data/ContactData'; 
 import contact01 from "../../Components/Images/contact01.jpg";
-import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; 
 
 import './Contact.css';
 
