@@ -14,11 +14,11 @@ function Home() {
     <div>
       <Carousel image1={pottery01} image2={pottery02} image3={pottery03} />
       <SpecialCategory />
-      <InformationBanner
+      {/* <InformationBanner
         title={mockData.title}
         description={mockData.description}
         benefits={mockData.benefits}
-      />
+      /> */}
       <div className="home-parallax-image">
         <div className="overlay">
           <GenericButton text="Take a Look at My Work" to="/projects" />
