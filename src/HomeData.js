@@ -29,8 +29,18 @@ export const mockData = {
 export const projects = [
   {
     id: 1,
-    title: "Pampa Bakery Website",
+    title: "Patagonia Website",
     date: "08 Feb 2025",
+    author: "Camila Riboldi",
+    subtitle: "A website project built with Node.js, Express, MongoDB, React.js, Axios, and Tailwind.",
+    image:"https://res.cloudinary.com/dav7tzdzv/image/upload/v1740142550/7c2fca4a-7ba5-4b9d-af35-f758db053a37.png",
+    slug: "patagonia-website",
+    url: "https://pampa-bakery.vercel.app/"
+  },
+  {
+    id: 1,
+    title: "Pampa Bakery Website",
+    date: "28 Jan 2025",
     author: "Camila Riboldi",
     subtitle: "A completed project for a bakery website using React.js, Redux for global state management, and Firebase.",
     image:"https://res.cloudinary.com/dav7tzdzv/image/upload/v1739806305/E-commerce_Sample_qmii38.png",

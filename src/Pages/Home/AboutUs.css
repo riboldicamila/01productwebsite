@@ -1,57 +1,54 @@
 .about-me-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px; 
-    background-color: #f8f8f8; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    justify-content: center;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  position: relative;
 
-  .about-me-container .about-us-content {
+  .about-us-content {
     text-align: center;
     max-width: 600px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
   }
-  
-  .about-me-container h2 {
-    font-size: 2.5rem; 
+
+  h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
-  
-  .about-me-container h3 {
-    font-size: 1.8rem; 
+
+  h3 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
   }
-  
-  .about-me-container p {
+
+  p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: var(--color-dark-grey); 
+    color: var(--color-dark-grey);
     margin-bottom: 15px;
     text-align: justify;
   }
-  
-  .about-me-container h4 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+
+  h4 {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    color: var(--color-dark-grey);
 
   }
-  
-  .about-me-container ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 40px;
+
+  ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    color: var(--color-dark-grey);
+    margin-bottom: 10px;
   }
-  
-  .about-me-container ul li {
-    margin-bottom: 5px;
-  }
-  
+
   .contact-us-btn {
-    background-color: #007bff; 
+    background-color: #007bff;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -59,17 +56,17 @@
     cursor: pointer;
     font-size: 1rem;
   }
-  
-  .about-me-container .image-container {
+
+  .image-container {
     width: 100%;
     max-width: 600px;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
-  
-  .about-me-container img {
+
+  img {
     width: 100%;
     height: auto;
-    border-radius: 5px; 
+    border-radius: 5px;
   }
 
   .image-container {
@@ -77,13 +74,13 @@
     display: inline-block;
     overflow: hidden;
   }
-  
+
   .image-container img {
     width: 100%;
     display: block;
     transition: opacity 0.3s ease-in-out;
   }
-  
+
   .image-container::after {
     content: "";
     position: absolute;
@@ -94,25 +91,24 @@
     background: rgba(0, 0, 0, 0); /* No darkness initially */
     transition: background 0.3s ease-in-out;
   }
-  
+
   .image-container:hover::after {
     background: rgba(0, 0, 0, 0.3); /* Dark curtain effect */
   }
-  
-  
-  @media screen and (min-width: 768px) {
-    .about-me-container {
-      flex-direction: row;
-      padding: 80px; 
-    }
-  
-    .about-me-container .about-us-content {
-      text-align: left;
-      margin-right: 40px; 
-    }
-  
-    .about-me-container .image-container {
-      margin-left: 20px;
-    }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-container {
+    flex-direction: row;
+    padding: 80px;
   }
-  
+
+  .about-me-container .about-us-content {
+    text-align: left;
+    margin-right: 40px;
+  }
+
+  .about-me-container .image-container {
+    margin-left: 20px;
+  }
+}

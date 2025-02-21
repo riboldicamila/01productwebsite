@@ -23,19 +23,27 @@ function AboutUs() {
             day. I started to dig deeper into it and specialize in the parts I
             liked the most, such as frontend and React.js.
           </p>
-          {/* <p>
-            While working and finishing my studies, I also realized how much I
-            enjoy the whole development process—being part of a team,
-            understanding agile methodologies, having productive discussions
-            with the team, and being involved in a project from beginning to
-            end.
-          </p> */}
           <p>
             My last role was at an American bank, where I gained a lot of growth
             and experience. However, due to a relocation to Italy, I had to
             leave that behind. Now, I’m looking for a new role to keep doing
             what I enjoy.
           </p>
+          <div className="skillset">
+            <h4>Skillset:</h4>
+            <ul>
+              <li>MERN tech stack (MongoDB, Express, React.js, Node.js)</li>
+              <li>
+                Experience in deployment to dev, uat, and prod environments
+              </li>
+              <li>Worked with Agile methodologies (Scrum, Jira)</li>
+              <li>Git (both with GitHub and Bitbucket)</li>
+            </ul>
+            <p>
+              Feel free to reach out—always happy to chat about tech and
+              projects!
+            </p>
+          </div>
 
           <GenericButton
             text="LinkedIn"
