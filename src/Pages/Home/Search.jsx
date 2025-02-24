@@ -24,6 +24,23 @@ const Search = () => {
       answer:
         "My English proficiency is at a C1 level. I achieved the TOEFL iBT - CEFR Level C1 certification in 2020 and previously obtained the IGCSE English Certification in 2017.",
     },
+    {
+      question: "Check Out My Walkthrough of Redux Code I Wrote",
+      answer: (
+        <div className="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fHa5OgZb02c?si=oVBIGU56vGbyJ-YV"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      ),
+    },
   ];
 
   const logos = ["React Js", "HTML", "JavaScript", "CSS", "Git", "SQL"];
@@ -33,7 +50,7 @@ const Search = () => {
       <div className="qa-container">
         <div className="content-wrapper">
           <div className="image-section">
-            <img src={qa01} alt="Liliana pottery" className="main-image" />
+            <img src={qa01} alt="pciture" className="main-image" />
           </div>
 
           <div className="content-section">
