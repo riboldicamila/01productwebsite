@@ -25,13 +25,13 @@ const Search = () => {
         "My English proficiency is at a C1 level. I achieved the TOEFL iBT - CEFR Level C1 certification in 2020 and previously obtained the IGCSE English Certification in 2017.",
     },
     {
-      question: "Check Out My Walkthrough of Redux Code I Wrote",
+      question: "Check out my walkthrough of Redux code",
       answer: (
         <div className="video-container">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/fHa5OgZb02c?si=oVBIGU56vGbyJ-YV"
+            src="https://www.youtube.com/embed/_ggpUsMmzIE?si=Xd6neSEiJ3s27XQs"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
