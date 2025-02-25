@@ -23,6 +23,10 @@ const images = [
     src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355414/Personal%20Website/about04_w8qejs.jpg",
     alt: "About picture",
   },
+  {
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1740494320/about01_sjljve.png",
+    alt: "About picture",
+  },
 ];
 
 const SpecialCategory = () => {
