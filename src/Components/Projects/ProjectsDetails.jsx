@@ -4,9 +4,9 @@ import { useParams, Link } from 'react-router-dom';
 import { projects } from '../../HomeData.js';
 import GenericButton from '../Button.jsx';
 
-import './CreationsStyles.css';
+import './ProjectsDetails.css';
 
-const CreationsDetails = () => {
+const ProjectsDetails = () => {
   const { slug } = useParams();
   
   const project = projects.find((b) => b.slug === slug);
@@ -47,4 +47,4 @@ const CreationsDetails = () => {
   );
 };
 
-export default CreationsDetails;
+export default ProjectsDetails;

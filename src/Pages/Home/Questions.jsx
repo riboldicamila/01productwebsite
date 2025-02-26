@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import GenericButton from "../../Components/Button";
 import qa01 from "../../Components/Images/qa01.jpg";
 
-import "./Search.css";
+import "./Questions.css";
 
-const Search = () => {
+const Questions = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
 
   const faqData = [
@@ -117,4 +117,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Questions;

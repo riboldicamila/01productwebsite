@@ -2,9 +2,9 @@ import React, { useParams } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "../../HomeData.js";
 
-import "./CreationsStyles.css";
+import "./ProjectsDetails.css";
 
-const CreationsGrid = () => {
+const ProjectsGrid = () => {
   return (
     <div className="creations">
       <div className="creations-container">
@@ -42,4 +42,4 @@ const CreationsGrid = () => {
   );
 };
 
-export default CreationsGrid;
+export default ProjectsGrid;
