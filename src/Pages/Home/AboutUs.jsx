@@ -1,8 +1,8 @@
 import React from "react";
 
 import OurServices from "../../Components/OurServices/OurServices";
-import pottery01 from "../../Components/Images/tech02.jpg";
-import GenericButton from "../../Components/Button";
+import pottery01 from "../../assets/Images/tech02.jpg";
+import GenericButton from "../../Components/GenericButton/Button";
 import IconsCarousel from "../../Components/IconsCarrousel/IconsCarrousel";
 
 import "./AboutUs.css";

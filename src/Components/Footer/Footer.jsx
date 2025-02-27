@@ -1,4 +1,3 @@
-import { FaTiktok, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import logoImage from "../Images/logoWhite.png";
@@ -39,7 +38,7 @@ const Footer = () => {
         </p>
 
         <p>
-          <strong>Email:</strong>{" "}
+          <strong>Email:</strong>
           <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
         </p>
       </div>

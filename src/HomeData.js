@@ -1,4 +1,4 @@
-import portfolio01 from "./Components/Images/portfolio01.png"
+import portfolio01 from "./assets/Images/portfolio01.png"
 
 export const mockData = { 
   title: "Let's Build!",

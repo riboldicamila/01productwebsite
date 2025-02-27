@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import '../Components/Button.css';
+import '../GenericButton/Button.css';
 
 function GenericButton({ className = '', text = 'SUBSCRIBE', to = '/' }) {
   const [isHovered, setIsHovered] = useState(false);

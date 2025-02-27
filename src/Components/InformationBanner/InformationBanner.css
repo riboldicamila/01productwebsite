@@ -1,67 +1,67 @@
 .info-banner {
-  background: url("../Images/information-banner.png") no-repeat center center/cover;
+  background: url("../Images/information-banner.png") no-repeat center
+    center/cover;
   padding: 50px 10%;
   text-align: center;
   color: white;
-}
 
-.info-banner h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
+  .info-banner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
 
-.info-banner p {
-  margin-bottom: 40px;
-  font-size: 0.8rem;
-}
+  .info-banner p {
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+  }
 
-.benefits-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+  .benefits-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 
-.benefit {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  flex: 1;
-  min-width: 250px; 
-}
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+  }
 
-.benefit img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
-}
+  .benefit img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
 
-.benefit h3 {
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
+  .benefit h3 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
 
-.benefit p {
-  color: #909090;
-}
+  .benefit p {
+    color: #909090;
+  }
 
-.read-more-btn {
-  background-color: var( --color-darker-grey);
-  color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-}
+  .read-more-btn {
+    background-color: var(--color-darker-grey);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
 
-.read-more-btn:hover {
-  background-color: #555;
+  .read-more-btn:hover {
+    background-color: #555;
+  }
 }
-
 
 @media (max-width: 1024px) {
   .benefits-container {
