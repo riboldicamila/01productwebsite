@@ -1,10 +1,10 @@
-import gifComputer from "../Images/computer-gif.gif";
-import gifDocument from "../Images/document-gif.gif";
-import gifWork from "../Images/work-gif.gif";
+import gifComputer from "../../assets/Images/computer-gif.gif";
+import gifDocument from "../../assets/Images/document-gif.gif";
+import gifWork from "../../assets/Images/work-gif.gif";
 
-import "./OurServices.css";
+import "./AboutMyWork.css";
 
-const OurServices = () => {
+const AboutMyWork = () => {
   return (
     <section className="our-services">
       <h2>My Journey</h2>
@@ -54,4 +54,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default AboutMyWork;

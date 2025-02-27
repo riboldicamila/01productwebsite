@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import logoImage from "../Images/logoWhite.png";
-import { aboutLinks, businessLinks, contactInfo } from "../../Data/FooterData";
+import logoImage from "../../assets/Images/logoWhite.png";
+import { ABOUT_LINKS, BUSINESS_LINKS, CONTACT_INFO } from "../../Data/FooterData";
 
 import "./Footer.css";
 
@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-column">
         <h3 className="title">About Us</h3>
         <ul>
-          {aboutLinks.map((link) => (
+          {ABOUT_LINKS.map((link) => (
             <li key={link.name}>
               <Link to={link.path}>{link.name}</Link>
             </li>
@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="footer-column">
         <h3 className="title">Our Business</h3>
         <ul>
-          {businessLinks.map((link) => (
+          {BUSINESS_LINKS.map((link) => (
             <li key={link.name}>
               <Link to={link.path}>{link.name}</Link>
             </li>
@@ -34,12 +34,12 @@ const Footer = () => {
       <div className="footer-column">
         <h3 className="title">Contact Information</h3>
         <p>
-          <strong>Location:</strong> {contactInfo.location}
+          <strong>Location:</strong> {CONTACT_INFO.location}
         </p>
 
         <p>
           <strong>Email:</strong>
-          <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+          <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
         </p>
       </div>
     </footer>

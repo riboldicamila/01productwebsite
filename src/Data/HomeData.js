@@ -1,6 +1,6 @@
-import portfolio01 from "./assets/Images/portfolio01.png"
+import portfolio01 from "../assets/Images/portfolio01.png"
 
-export const mockData = { 
+export const MOCK_DATA = { 
   title: "Let's Build!",
   description:
     "Creating web applications that are functional, responsive, and easy to use. Turn your ideas into reality.",
@@ -26,7 +26,7 @@ export const mockData = {
   ],
 };
 
-export const projects = [
+export const PROJECTS = [
   {
     id: 1,
     title: "Patagonia Website",

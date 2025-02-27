@@ -1,6 +1,6 @@
 import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; 
 
-import { contactInfo } from '../../Data/ContactData'; 
+import { CONTACT_INFO } from '../../Data/ContactData'; 
 import contact01 from "../../assets/Images/contact01.jpg";
 
 import './Contact.css';
@@ -32,18 +32,18 @@ const Contact = () => {
           <div className="info-grid">
             <div className="info-item">
               <h3>Based on</h3>
-              <p>{contactInfo.address[0]}</p>
-              <p>{contactInfo.address[1]}</p>
+              <p>{CONTACT_INFO.address[0]}</p>
+              <p>{CONTACT_INFO.address[1]}</p>
             </div>
             
             <div className="info-item">
               <h3>Email</h3>
-              <p>{contactInfo.email}</p>
+              <p>{CONTACT_INFO.email}</p>
             </div>
             
             <div className="info-item">
               <h3>Additional Information</h3>
-              <p>{contactInfo.additionalInfo}</p>
+              <p>{CONTACT_INFO.additionalInfo}</p>
             </div>
           </div>
           

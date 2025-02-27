@@ -1,5 +1,5 @@
 
-export const contactInfo = {
+export const CONTACT_INFO = {
   address: [
     "Worldwide. Argentina and Italy based."
   ],

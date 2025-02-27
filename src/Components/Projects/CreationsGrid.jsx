@@ -1,6 +1,6 @@
 import React, { useParams } from "react";
 import { Link } from "react-router-dom";
-import { projects } from "../../HomeData.js";
+import { PROJECTS } from "../../Data/HomeData.js";
 
 import "./ProjectsDetails.css";
 
@@ -13,7 +13,7 @@ const ProjectsGrid = () => {
         </div>
 
         <div className="project-grid">
-          {projects.map((project) => (
+          {PROJECTS.map((project) => (
             <article key={project.id} className="project-card">
               <Link to={`/project/${project.slug}`} className="project-link">
                 <div className="project-image">

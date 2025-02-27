@@ -1,6 +1,6 @@
 import React from "react";
 
-import OurServices from "../../Components/OurServices/OurServices";
+import AboutMyWork from "../../Components/AboutMyWork/AboutMyWork";
 import pottery01 from "../../assets/Images/tech02.jpg";
 import GenericButton from "../../Components/GenericButton/Button";
 import IconsCarousel from "../../Components/IconsCarrousel/IconsCarrousel";
@@ -55,7 +55,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <OurServices />
+      <AboutMyWork />
 
       <IconsCarousel />
     </div>

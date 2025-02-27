@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import logoImage from '../Images/logo.png';
-import { navLinksLeft, navLinksRight } from '../../Data/NavbarData';
+import logoImage from '../../assets/Images/logo.png';
+import { NAV_LINKS_LEFT, NAV_LINKS_RIGHT } from '../../Data/NavbarData';
 
 import './Navbar.css';
 
@@ -50,7 +50,7 @@ function Navbar() {
         
         <div className={`left-side ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <ul className="nav-links">
-            {navLinksLeft.map((link) => (
+            {NAV_LINKS_LEFT.map((link) => (
               <li key={link.name}>
                 <Link to={link.path}>{link.name}</Link>
               </li>
@@ -64,7 +64,7 @@ function Navbar() {
 
         <div className={`right-side ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <ul className="nav-links">
-            {navLinksRight.map((link) => (
+            {NAV_LINKS_RIGHT.map((link) => (
               <li key={link.name}>
                 <Link to={link.path}>{link.name}</Link>
               </li>

@@ -1,15 +1,15 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-import { projects } from '../../HomeData.js';
-import GenericButton from '../Button.jsx';
+import { PROJECTS } from '../../Data/HomeData.js';
+import GenericButton from '../GenericButton/Button.jsx';
 
 import './ProjectsDetails.css';
 
 const ProjectsDetails = () => {
   const { slug } = useParams();
   
-  const project = projects.find((b) => b.slug === slug);
+  const project = PROJECTS.find((b) => b.slug === slug);
 
   if (!project) {
     return (
