@@ -1,6 +1,7 @@
 .special-category-container {
   margin: 0 auto;
-  padding: 5% 15%;
+  padding: 10% 15%;
+  height: 950px;
   
   .exclusive-category {
     text-align: center;
