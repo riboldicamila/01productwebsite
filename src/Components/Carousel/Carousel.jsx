@@ -42,7 +42,7 @@ function Carousel({ image3 }) {
           <SwiperSlide key={index} className="swiper-slide">
             <div className="carousel-text">
               <p>{text}</p>
-              <GenericButton text="Know More" to="/about" />
+              {/* <GenericButton text="Know More" to="/about" /> */}
             </div>
           </SwiperSlide>
         ))}
