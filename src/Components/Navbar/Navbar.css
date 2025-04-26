@@ -18,6 +18,7 @@
 
 .email {
   margin-left: 10px;
+  font-size: 12px;
   display: flex;
 }
 
@@ -47,8 +48,8 @@
   transition: padding 0.3s ease, box-shadow 0.3s ease;
 
   .logo {
-    width: 220px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
   }
 
   .hamburger-menu {

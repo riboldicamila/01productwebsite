@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import logoImage from '../../assets/Images/logo.png';
+import logoImage from '../../assets/Images/logo-main.png';
 import { NAV_LINKS_LEFT, NAV_LINKS_RIGHT } from '../../Data/NavbarData';
 
 import './Navbar.css';
