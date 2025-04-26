@@ -9,11 +9,16 @@ import "./SpecialCategory.css";
 
 const images = [
   {
-    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355097/about01_n9nhnq.jpg",
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1740494320/about01_sjljve.png",
+    alt: "About picture",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355411/Personal%20Website/about05_r2eur7.jpg",
     alt: "About picture",
   },
   {
-    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355411/Personal%20Website/about05_r2eur7.jpg",
+    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355097/about01_n9nhnq.jpg",
     alt: "About picture",
   },
   {
@@ -22,10 +27,6 @@ const images = [
   },
   {
     src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739355414/Personal%20Website/about04_w8qejs.jpg",
-    alt: "About picture",
-  },
-  {
-    src: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1740494320/about01_sjljve.png",
     alt: "About picture",
   },
 ];
