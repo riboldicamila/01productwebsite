@@ -4,7 +4,7 @@ import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import ProjectsGrid from './Components/Projects/CreationsGrid';
 import ProjectsDetails from './Components/Projects/ProjectsDetails';
-
+import ConnectButton from './Components/ConnectButton/ConnectButton'; 
 import Home from './Pages/Home/Home';
 import AboutUs from './Pages/Home/AboutUs';
 import Contact from './Pages/Home/Contact';
@@ -25,10 +25,10 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/project/:slug" element={<ProjectsDetails />} />
             <Route path="/qa" element={<Questions />} />
-
           </Routes>
         </div>
         <Footer />
+        <ConnectButton /> {/* Add the button here */}
       </div>
     </Router>
   );
