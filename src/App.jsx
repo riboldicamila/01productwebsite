@@ -28,7 +28,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
-        <ConnectButton /> {/* Add the button here */}
+        <ConnectButton /> 
       </div>
     </Router>
   );
