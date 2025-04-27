@@ -12,17 +12,16 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    z-index: 1;
-  }
 
-  .static-text h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
 
-  .static-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
   }
 
   .swiper-carousel {
@@ -42,13 +41,7 @@
     text-align: center;
     color: white;
     padding: 0 20px;
-    margin-top: 250px;
-  }
-
-  .carousel-text p {
-    font-size: 1rem;
-    max-width: 70%;
-    margin-bottom: 1rem;
+    margin-top: 230px;
   }
 
   .swiper-pagination-bullet {
@@ -62,19 +55,12 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: #ff0000;
-    background-color: transparent;
-    padding: 10px;
+    visibility: hidden;
   }
 
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 20px;
-    color: #ff0000;
-  }
-
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    background-color: rgba(255, 0, 0, 0.1);
+  @media (max-width: 1380px) {
+    .carousel-text {
+      margin-top: 430px;
+    }
   }
 }

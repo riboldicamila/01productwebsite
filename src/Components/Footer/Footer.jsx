@@ -12,7 +12,7 @@ const Footer = () => {
         <img src={logoImage} alt="Logo" className="logo" />
       </div>
       <div className="footer-column">
-        <h3 className="title">About Us</h3>
+        <h3 className="title">About</h3>
         <ul>
           {ABOUT_LINKS.map((link) => (
             <li key={link.name}>
@@ -22,7 +22,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-column">
-        <h3 className="title">Our Business</h3>
+        <h3 className="title">Work</h3>
         <ul>
           {BUSINESS_LINKS.map((link) => (
             <li key={link.name}>
@@ -38,7 +38,7 @@ const Footer = () => {
         </p>
 
         <p>
-          <strong>Email:</strong>
+          <strong>Email: </strong>
           <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
         </p>
       </div>
