@@ -4,7 +4,7 @@ export const ABOUT_LINKS = [
 ];
 
 export const BUSINESS_LINKS = [
-  { name: "Projetcs", path: "/projects" },
+  { name: "Projects", path: "/projects" },
   { name: "Q&A", path: "/qa" },
 ];
 
