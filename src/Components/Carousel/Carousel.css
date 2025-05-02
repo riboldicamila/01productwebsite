@@ -4,7 +4,29 @@
   background-size: cover;
   background-position: bottom;
   opacity: 0.9;
+  overflow: hidden; 
 
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    opacity: 0.8;
+  }
+
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 0; 
+  }
+  
   .static-text {
     position: absolute;
     top: 50%;

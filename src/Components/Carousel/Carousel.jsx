@@ -8,7 +8,7 @@ import GenericButton from "../GenericButton/Button";
 
 import "./Carousel.css";
 
-function Carousel({ image3 }) {
+function Carousel({ videoSrc }) {
   const textSlides = [
     "Get to know my journey and how I become a software developer.",
     "Enjoy creating websites, learning about tech.",
@@ -16,10 +16,21 @@ function Carousel({ image3 }) {
   ];
 
   return (
-    <div
-      className="carousel-container"
-      style={{ backgroundImage: `url(${image3})` }}
-    >
+    <div className="carousel-container">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="background-video"
+      >
+        <source src="https://res.cloudinary.com/dav7tzdzv/video/upload/v1746209885/7989675-hd_1920_1080_25fps_yqcano.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="background-overlay"></div>
+
+
       <div className="static-text">
         <h2>DEVELOPER</h2>
         <h1>Crafting Solutions</h1>
@@ -32,8 +43,8 @@ function Carousel({ image3 }) {
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{
-          delay: 2500,
-          speed: 1000,
+          delay: 4500,
+          speed: 2000,
           disableOnInteraction: false,
         }}
         className="swiper-carousel"
@@ -42,7 +53,6 @@ function Carousel({ image3 }) {
           <SwiperSlide key={index} className="swiper-slide">
             <div className="carousel-text">
               <p>{text}</p>
-              {/* <GenericButton text="Know More" to="/about" /> */}
             </div>
           </SwiperSlide>
         ))}
