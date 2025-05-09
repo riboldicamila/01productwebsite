@@ -29,6 +29,16 @@ export const MOCK_DATA = {
 export const PROJECTS = [
   {
     id: 1,
+    title: "Law Firm Website",
+    date: "12 April 2025",
+    author: "Camila Riboldi",
+    subtitle: "Designed and developed the website for the law firm “Dra. Claudia Simón & Asoc. | Estudio Jurídico” using React.js and Tailwind CSS. Focused on creating a modern, responsive, and user-friendly interface that reflects the professionalism and values of the firm.",
+    image:"https://res.cloudinary.com/dav7tzdzv/image/upload/v1746778657/Copy_of_Copy_of_Patagonia_1_ioqj4a.jpg",
+    slug: "law-website",
+    url: "https://claudiasimonyasociados-estudiojuridico.vercel.app/"
+  },
+  {
+    id: 2,
     title: "Patagonia Website",
     date: "08 Feb 2025",
     author: "Camila Riboldi",
@@ -38,7 +48,7 @@ export const PROJECTS = [
     url: "https://patagonia-backend.onrender.com/"
   },
   {
-    id: 1,
+    id: 2,
     title: "Pampa Bakery Website",
     date: "28 Jan 2025",
     author: "Camila Riboldi",
