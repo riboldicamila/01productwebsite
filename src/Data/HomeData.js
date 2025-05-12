@@ -57,16 +57,16 @@ export const PROJECTS = [
     slug: "daily-panel-app",
     url: "https://pampa-bakery.vercel.app/"
   },
-  {
-    id: 3,
-    title: "Minimal Web Design - React Practice",
-    date: "02 Jan 2025",
-    author: "Camila Riboldi",
-    subtitle: "A minimalist web page created with React, CSS, and Bootstrap, focusing on clean UI design and smooth user interactions.",
-    image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739805391/Copy_of_personal_website_tenfxj.png",
-    slug: "minimal-web-design",
-    url: "https://minimalistic-web-sample.vercel.app/",
-  },
+  // {
+  //   id: 3,
+  //   title: "Minimal Web Design - React Practice",
+  //   date: "02 Jan 2025",
+  //   author: "Camila Riboldi",
+  //   subtitle: "A minimalist web page created with React, CSS, and Bootstrap, focusing on clean UI design and smooth user interactions.",
+  //   image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1739805391/Copy_of_personal_website_tenfxj.png",
+  //   slug: "minimal-web-design",
+  //   url: "https://minimalistic-web-sample.vercel.app/",
+  // },
   {
     id: 4,
     title: "Swiss Media - Responsive Website Design",
