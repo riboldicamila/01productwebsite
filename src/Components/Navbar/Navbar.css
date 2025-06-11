@@ -107,7 +107,6 @@
 
 @media screen and (max-width: 768px) {
   .hamburger-menu {
-    padding-bottom: 3rem;
     display: block;
     color: black;
   }
