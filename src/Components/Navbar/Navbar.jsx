@@ -11,6 +11,9 @@ function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Combine all navigation links for mobile menu
+  const allNavLinks = [...NAV_LINKS_LEFT, ...NAV_LINKS_RIGHT];
+
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsSticky(true);
@@ -59,7 +62,9 @@ function Navbar() {
         </div>
 
         <div className="logo">
-          <img src={logoImage} alt="Logo" />
+          <Link to="/">
+            <img src={logoImage} alt="Logo" />
+          </Link>
         </div>
 
         <div className={`right-side ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>

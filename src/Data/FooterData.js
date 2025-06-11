@@ -9,6 +9,6 @@ export const BUSINESS_LINKS = [
 ];
 
 export const CONTACT_INFO = {
-  location: "Worldwide. Argentina and Italy based.",
+  location: "Worldwide. From Argentina, currently based in Italy.",
   email: "cami.riboldi@gmail.com",
 };
