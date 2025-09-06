@@ -28,6 +28,18 @@ export const MOCK_DATA = {
 
 export const PROJECTS = [
   {
+    id: 6,
+    title: "Artistic Landing Website",
+    date: "20 July 2025",
+    author: "Camila Riboldi",
+    subtitle:
+      "Designed and developed the website for local pottery artists. Using React.js and Tailwind.",
+    image:
+      "https://res.cloudinary.com/dav7tzdzv/image/upload/v1757152588/Pottery_lo30v9.png",
+    slug: "pottery-website",
+    url: "https://www.ituarteceramica.com/",
+  },
+  {
     id: 1,
     title: "Law Firm Website",
     date: "12 April 2025",
